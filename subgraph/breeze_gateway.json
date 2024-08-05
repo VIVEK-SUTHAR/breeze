@@ -1,0 +1,17 @@
+{
+  "version": "1",
+  "name": "BreezeGateway",
+  "abis": {
+    "breezegateway": {
+      "path": "./abi.json"
+    }
+  },
+  "instances": [
+    {
+      "abi": "breezegateway",
+      "address": "0xf6F91ee5Ef0382B5dfF309d94c7CDfc3Fa2A86c7",
+      "startBlock":60214408,
+      "chain": "matic"
+    }
+  ]
+}

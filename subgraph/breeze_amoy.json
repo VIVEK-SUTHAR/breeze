@@ -1,0 +1,18 @@
+
+{
+  "version": "1",
+  "name": "BreezeGateway",
+  "abis": {
+    "breezegateway": {
+      "path": "./abi.json"
+    }
+  },
+  "instances": [
+    {
+      "abi": "breezegateway",
+      "address": "0xB5642C0F44B3c8f8312aFfe18c3d94229BDD6B0b",
+      "startBlock":10345023,
+      "chain": "polygon-amoy"
+    }
+  ]
+}
