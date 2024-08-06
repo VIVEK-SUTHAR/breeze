@@ -4,6 +4,7 @@ import { setupWatcher } from "./lib/priceWatch";
 import { addListener } from "process";
 import { WebhookEvent } from "./lib/types/EventData";
 import fetchTxnData from "./lib/api/socket.api";
+import executeTrade from "./lib/utils/excuteTrade";
 
 const PORT = 3000;
 
@@ -32,6 +33,10 @@ app.post("/webhook", (req: Request, res: Response) => {
       console.log("txnData", txnData);
 
       //To-Do: Use TxnData to Call Contract from EOA.
+
+      if (txnData) {
+        await executeTrade(txnData, eventData.data.new.transfer_id);
+      }
     },
   });
   res.status(200).send("Webhook received");
