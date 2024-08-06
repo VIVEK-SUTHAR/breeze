@@ -19,7 +19,8 @@ export class SocketApi {
     toChainId: string,
     fromTokenAddress: string,
     toTokenAddress: string,
-    fromAmount: string
+    fromAmount: string,
+    recipient: string
   ): Promise<SwapRoutes | undefined> {
     try {
       const params = {
@@ -32,6 +33,8 @@ export class SocketApi {
         singleTxOnly: "true",
         uniqueRoutesPerBridge: "false",
         sort: "output",
+        recipient,
+        isContractCall: "true",
       };
 
       const queryString = new URLSearchParams(params).toString();
@@ -84,7 +87,8 @@ const fetchTxnData = async (
   toChainId: string,
   fromTokenAddress: string,
   toTokenAddress: string,
-  fromAmount: string
+  fromAmount: string,
+  recipient: string
 ) => {
   const routes = await SocketApi.getRoutes(
     fromChainId,
@@ -93,7 +97,8 @@ const fetchTxnData = async (
       ? "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
       : fromTokenAddress,
     toTokenAddress,
-    fromAmount
+    fromAmount,
+    recipient
   );
   console.log("routes", routes);
 
