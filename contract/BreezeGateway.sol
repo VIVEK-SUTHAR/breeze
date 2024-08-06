@@ -15,9 +15,10 @@ contract BreezeGateway {
 		uint256 sourceChain;
 		uint256 destChain;
         bool executed;
+        bytes targetPrice;
     }
 
-	 event BridgeInitiated(bytes32 indexed transferId, address user, uint256 amount, address sourceToken, address destToken, uint256 sourceChain, uint256 destChain);
+	 event BridgeInitiated(bytes32 indexed transferId, address user, uint256 amount, address sourceToken, address destToken, uint256 sourceChain, uint256 destChain, bytes targetPrice);
 
     // For Native Tokens
     // Approves Bungee Impl spending & initiates bridging in single transaction
@@ -52,10 +53,11 @@ contract BreezeGateway {
     address _destToken,
     uint256 _sourceChain,
     uint256 _destChain,
-    uint256 _amount
+    uint256 _amount,
+    bytes memory targetPrice
     ) public payable  {
-        bytes32 transferId = keccak256(abi.encodePacked(block.timestamp, to, _amount, _sourceToken, _destToken, _sourceChain, _destChain));
-        pendingTransfers[transferId] = PendingTransfer(to, _amount, _sourceToken, _destToken, _sourceChain, _destChain, false);
+        bytes32 transferId = keccak256(abi.encodePacked(block.timestamp, to, _amount, _sourceToken, _destToken, _sourceChain, _destChain, targetPrice));
+        pendingTransfers[transferId] = PendingTransfer(to, _amount, _sourceToken, _destToken, _sourceChain, _destChain, false, targetPrice);
 
         if (_sourceToken == address(0)) {
             require(msg.value == _amount, "Incorrect ETH amount sent");
@@ -63,7 +65,7 @@ contract BreezeGateway {
             require(IERC20(_sourceToken).transferFrom(msg.sender, address(this), _amount), "Token transfer failed");
         }
 
-        emit BridgeInitiated(transferId, to, _amount, _sourceToken, _destToken, _sourceChain, _destChain);
+        emit BridgeInitiated(transferId, to, _amount, _sourceToken, _destToken, _sourceChain, _destChain, targetPrice);
     }
  // Receive function to accept plain Ether transfers
     receive() external payable {}

@@ -29,6 +29,7 @@ interface WebhookDataNew {
   vid: string;
   timestamp: string;
   source_token: string;
+  target_price: string;
 }
 
 interface DeliveryInfo {
