@@ -1,0 +1,1076 @@
+[
+  {
+    "pythSymbol": "Crypto.FUD/USD (Coming Soon)",
+    "id": "0x6a4090703da959247727f2b490eb21aea95c8684ecfac675f432008830890c75",
+    "symbol": "FUD",
+    "name": "Aavegotchi FUD"
+  },
+  {
+    "pythSymbol": "Crypto.WETH/USD",
+    "id": "0x9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6",
+    "symbol": "WETH",
+    "name": "Wrapped Ether"
+  },
+  {
+    "pythSymbol": "Crypto.BAL/USD",
+    "id": "0x07ad7b4a7662d19a6bc675f6b467172d2f3947fa653ca97555a9b20236406628",
+    "symbol": "BAL",
+    "name": "Balancer"
+  },
+  {
+    "pythSymbol": "Crypto.USDT/USD",
+    "id": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "symbol": "USDT",
+    "name": "Tether USD"
+  },
+  {
+    "pythSymbol": "Crypto.APE/USD",
+    "id": "0x15add95022ae13563a11992e727c91bdb6b55bc183d9d747436c80a483d8c864",
+    "symbol": "APE",
+    "name": "ApeCoin"
+  },
+  {
+    "pythSymbol": "Crypto.WOO/USD",
+    "id": "0xb82449fd728133488d2d41131cffe763f9c1693b73c544d9ef6aaa371060dd25",
+    "symbol": "WOO",
+    "name": "Wootrade Network"
+  },
+  {
+    "pythSymbol": "Crypto.BOBA/USD",
+    "id": "0xd1e9cff9b8399f9867819a3bf1aa8c2598234eecfd36ddc3a7bc7848432184b5",
+    "symbol": "BOBA",
+    "name": "bobabet.dcl.eth.link"
+  },
+  {
+    "pythSymbol": "Crypto.MATIC/USD",
+    "id": "0x5de33a9112c2b700b8d30b8a3402c103578ccfa2765696471cc672bd5cf6ac52",
+    "symbol": "MATIC",
+    "name": "MATIC"
+  },
+  {
+    "pythSymbol": "Crypto.UMA/USD",
+    "id": "0x4b78d251770732f6304b1f41e9bebaabc3b256985ef18988f6de8d6562dd254c",
+    "symbol": "UMA",
+    "name": "UMA Voting Token v1"
+  },
+  {
+    "pythSymbol": "Crypto.USDC/USD",
+    "id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "symbol": "USDC",
+    "name": "Native USD Coin (POS)"
+  },
+  {
+    "pythSymbol": "Crypto.WBTC/USD",
+    "id": "0xc9d8b075a5c69303365ae23633d4e085199bf5c520a3b90fed1322a0342ffc33",
+    "symbol": "WBTC",
+    "name": "Wrapped BTC"
+  },
+  {
+    "pythSymbol": "Crypto.DAI/USD",
+    "id": "0xb0948a5e5313200c632b51bb5ca32f6de0d36e9950a942d19751e833f70dabfd",
+    "symbol": "DAI",
+    "name": "Dai Stablecoin"
+  },
+  {
+    "pythSymbol": "Crypto.USDD/USD",
+    "id": "0x6d20210495d6518787b72e4ad06bc4df21e68d89a802cf6bced2fca6c29652a6",
+    "symbol": "USDD",
+    "name": "Decentralized USD"
+  },
+  {
+    "pythSymbol": "Crypto.TRUMATIC/USD (Coming Soon)",
+    "id": "0xbfaca10c7f35ca09191ebac4e1c0adfe852ea8aef2b202ac6b4e71bddb350473",
+    "symbol": "TRUMATIC",
+    "name": "TruStake MATIC Vault Shares"
+  },
+  {
+    "pythSymbol": "Crypto.OMI/USD",
+    "id": "0x06d9fa501fd2bef47265361ca0eaf6e0a97c3b226cea5ab760240f70818581ad",
+    "symbol": "OMI",
+    "name": "OMI Token"
+  },
+  {
+    "pythSymbol": "Crypto.ERN/USD",
+    "id": "0xd0798c1e23efe9eb484de00a342948080343971d08a7b5725b12cb54fc5a89c7",
+    "symbol": "ERN",
+    "name": "@EthernityChain $ERN Token"
+  },
+  {
+    "pythSymbol": "Crypto.EURS/USD (Coming Soon)",
+    "id": "0x14a8d834594165c7870a785b4feffcfb688b4f723e79579a6dc98cae6a8204f3",
+    "symbol": "EURS",
+    "name": "STASIS EURS Token (PoS)"
+  },
+  {
+    "pythSymbol": "Crypto.MKR/USD",
+    "id": "0x9375299e31c0deb9c6bc378e6329aab44cb48ec655552a70d4b9050346a30378",
+    "symbol": "MKR",
+    "name": "Maker"
+  },
+  {
+    "pythSymbol": "Crypto.API3/USD",
+    "id": "0x95ea50020cf75a81a105d639fd74773ade522e12044600b52286ff5961c71412",
+    "symbol": "API3",
+    "name": "API3"
+  },
+  {
+    "pythSymbol": "Crypto.FXS/USD",
+    "id": "0x735f591e4fed988cd38df74d8fcedecf2fe8d9111664e0fd500db9aa78b316b1",
+    "symbol": "FXS",
+    "name": "Frax Share"
+  },
+  {
+    "pythSymbol": "Crypto.FRAX/USD",
+    "id": "0xc3d5d8d6d17081b3d0bbca6e2fa3a6704bb9a9561d9f9e1dc52db47629f862ad",
+    "symbol": "FRAX",
+    "name": "Frax"
+  },
+  {
+    "pythSymbol": "Crypto.BUSD/USD (Coming Soon)",
+    "id": "0x5bc91f13e412c07599167bae86f07543f076a638962b8d6017ec19dab4a82814",
+    "symbol": "BUSD",
+    "name": "Binance USD"
+  },
+  {
+    "pythSymbol": "Crypto.WEN/USD",
+    "id": "0x5169491cd7e2a44c98353b779d5eb612e4ac32e073f5cc534303d86307c2f1bc",
+    "symbol": "WEN",
+    "name": "WEN Token"
+  },
+  {
+    "pythSymbol": "Crypto.SCA/USD",
+    "id": "0x7e17f0ac105abe9214deb9944c30264f5986bf292869c6bd8e8da3ccd92d79bc",
+    "symbol": "SCA",
+    "name": "ScaleSwapToken"
+  },
+  {
+    "pythSymbol": "Crypto.WEETH/USD",
+    "id": "0x9ee4e7c60b940440a261eb54b6d8149c23b580ed7da3139f7f08f4ea29dad395",
+    "symbol": "WEETH",
+    "name": "Wrapped eETH"
+  },
+  {
+    "pythSymbol": "Crypto.TRUMATIC/USD (Coming Soon)",
+    "id": "0xbfaca10c7f35ca09191ebac4e1c0adfe852ea8aef2b202ac6b4e71bddb350473",
+    "symbol": "TRUMATIC",
+    "name": "TruStake MATIC Vault Shares"
+  },
+  {
+    "pythSymbol": "Crypto.RPL/USD",
+    "id": "0x24f94ac0fd8638e3fc41aab2e4df933e63f763351b640bf336a6ec70651c4503",
+    "symbol": "RPL",
+    "name": "Rocket Pool Protocol"
+  },
+  {
+    "pythSymbol": "Crypto.TRUMATIC/USD (Coming Soon)",
+    "id": "0xbfaca10c7f35ca09191ebac4e1c0adfe852ea8aef2b202ac6b4e71bddb350473",
+    "symbol": "TRUMATIC",
+    "name": "TruStake MATIC Vault Shares"
+  },
+  {
+    "pythSymbol": "Crypto.PYUSD/USD",
+    "id": "0xc1da1b73d7f01e7ddd54b3766cf7fcd644395ad14f70aa706ec5384c59e76692",
+    "symbol": "PYUSD",
+    "name": "PayPal USD"
+  },
+  {
+    "pythSymbol": "Crypto.MAV/USD",
+    "id": "0x5b131ede5d017511cf5280b9ebf20708af299266a033752b64180c4201363b11",
+    "symbol": "MAV",
+    "name": "Massive Protocol"
+  },
+  {
+    "pythSymbol": "Crypto.SDAI/USD",
+    "id": "0x710659c5a68e2416ce4264ca8d50d34acc20041d91289110eea152c52ff3dc39",
+    "symbol": "SDAI",
+    "name": "Savings Dai"
+  },
+  {
+    "pythSymbol": "Crypto.SHIB/USD",
+    "id": "0xf0d57deca57b3da2fe63a493f4c25925fdfd8edf834b20f93e1f84dbd1504d4a",
+    "symbol": "SHIB",
+    "name": "NicCageWaluigiElmo42069Inu"
+  },
+  {
+    "pythSymbol": "Crypto.USDC/USD",
+    "id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "symbol": "USDC",
+    "name": "Bridged USDC"
+  },
+  {
+    "pythSymbol": "Crypto.TBTC/USD",
+    "id": "0x56a3121958b01f99fdc4e1fd01e81050602c7ace3a571918bb55c6a96657cca9",
+    "symbol": "TBTC",
+    "name": "tBTC v2"
+  },
+  {
+    "pythSymbol": "Crypto.TRX/USD",
+    "id": "0x67aed5a24fdad045475e7195c98a98aea119c763f272d4523f5bac93a4f33c2b",
+    "symbol": "TRX",
+    "name": "TRON"
+  },
+  {
+    "pythSymbol": "Crypto.TRUMATIC/USD (Coming Soon)",
+    "id": "0xbfaca10c7f35ca09191ebac4e1c0adfe852ea8aef2b202ac6b4e71bddb350473",
+    "symbol": "TRUMATIC",
+    "name": "TruStake MATIC Vault Shares"
+  },
+  {
+    "pythSymbol": "Crypto.PEPE/USD",
+    "id": "0xd69731a2e74ac1ce884fc3890f7ee324b6deb66147055249568869ed700882e4",
+    "symbol": "PEPE",
+    "name": "Pepe"
+  },
+  {
+    "pythSymbol": "Crypto.MTR/USD",
+    "id": "0x8cdc9b2118d2ce55a299f8f1d700d0127cf4036d1aa666a8cd51dcab4254284f",
+    "symbol": "MTR",
+    "name": "Matter"
+  },
+  {
+    "pythSymbol": "Crypto.MATIC/USD",
+    "id": "0x5de33a9112c2b700b8d30b8a3402c103578ccfa2765696471cc672bd5cf6ac52",
+    "symbol": "MATIC",
+    "name": "Matic Token"
+  },
+  {
+    "pythSymbol": "Crypto.CBETH/USD",
+    "id": "0x15ecddd26d49e1a8f1de9376ebebc03916ede873447c1255d2d5891b92ce5717",
+    "symbol": "CBETH",
+    "name": "Coinbase Wrapped Staked ETH"
+  },
+  {
+    "pythSymbol": "Crypto.WSTETH/USD",
+    "id": "0x6df640f3b8963d8f8358f791f352b8364513f6ab1cca5ed3f1f7b5448980e784",
+    "symbol": "WSTETH",
+    "name": "Wrapped Staked ETH"
+  },
+  {
+    "pythSymbol": "Crypto.CHR/USD",
+    "id": "0xbd4dbcbfd90e6bc6c583e07ffcb5cb6d09a0c7b1221805211ace08c837859627",
+    "symbol": "CHR",
+    "name": "Chroma"
+  },
+  {
+    "pythSymbol": "Crypto.GALA/USD",
+    "id": "0x0781209c28fda797616212b7f94d77af3a01f3e94a5d421760aef020cf2bcb51",
+    "symbol": "GALA",
+    "name": "Gala"
+  },
+  {
+    "pythSymbol": "Crypto.LEO/USD",
+    "id": "0x19e4e2b451406cf99311bb5127b12a948db17f30b69c323c8657d71119a58619",
+    "symbol": "LEO",
+    "name": "Bitfinex LEO Token"
+  },
+  {
+    "pythSymbol": "Crypto.USDV/USD (Coming Soon)",
+    "id": "0x8ca288964980494c8ed2cb944d8a28f158a30e513d483fdfbe30fbe3719a14e4",
+    "symbol": "USDV",
+    "name": "Value USD"
+  },
+  {
+    "pythSymbol": "Crypto.QUICK/USD",
+    "id": "0xd28fd418fef97f1b21f72a6bc39687b52ab368d291a5ee8f16e6033ec81c81d8",
+    "symbol": "QUICK",
+    "name": "QuickSwap"
+  },
+  {
+    "pythSymbol": "Crypto.SD/USD",
+    "id": "0x83aac6fae150e8850204ef5dce696c05ae2efa335a41c7e5c112bc73e5cbae35",
+    "symbol": "SD",
+    "name": "Stader"
+  },
+  {
+    "pythSymbol": "Crypto.FLOKI/USD",
+    "id": "0x6b1381ce7e874dc5410b197ac8348162c0dd6c0d4c9cd6322672d6c2b1d58293",
+    "symbol": "FLOKI",
+    "name": "FLOKI"
+  },
+  {
+    "pythSymbol": "Crypto.1INCH/USD",
+    "id": "0x63f341689d98a12ef60a5cff1d7f85c70a9e17bf1575f0e7c0b2512d48b1c8b3",
+    "symbol": "1INCH",
+    "name": "1INCH Token"
+  },
+  {
+    "pythSymbol": "Crypto.BAL/USD",
+    "id": "0x07ad7b4a7662d19a6bc675f6b467172d2f3947fa653ca97555a9b20236406628",
+    "symbol": "BAL",
+    "name": "Balance token"
+  },
+  {
+    "pythSymbol": "Crypto.LOOKS/USD",
+    "id": "0xacecdd9ac741a1f6dad0fd6ade5354e9523bd0c864b955307cea3643fdfe8ff5",
+    "symbol": "LOOKS",
+    "name": "LooksRare Token"
+  },
+  {
+    "pythSymbol": "Crypto.WETH/USD",
+    "id": "0x9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6",
+    "symbol": "WETH",
+    "name": "Wrapped Ether (PoS)"
+  },
+  {
+    "pythSymbol": "Crypto.SLP/USD",
+    "id": "0xfba17701be318087db58d9797d5f1e89dcf5b95773ae2227c8a8eb4cf1d4e554",
+    "symbol": "SLP",
+    "name": "SushiSwap LP Token"
+  },
+  {
+    "pythSymbol": "Crypto.GT/USD",
+    "id": "0x051ee6cdd581106d0291dfd9b0ee13e6b4dde8fb251afd262c2ba5444257daa8",
+    "symbol": "GT",
+    "name": "GateChainToken"
+  },
+  {
+    "pythSymbol": "Crypto.MASK/USD",
+    "id": "0xb97d9aa5c9ea258252456963c3a9547d53e4848cb66ce342a3155520741a28d4",
+    "symbol": "MASK",
+    "name": "Mask Network (PoS)"
+  },
+  {
+    "pythSymbol": "Crypto.SCA/USD",
+    "id": "0x7e17f0ac105abe9214deb9944c30264f5986bf292869c6bd8e8da3ccd92d79bc",
+    "symbol": "SCA",
+    "name": "ScaleSwapToken"
+  },
+  {
+    "pythSymbol": "Crypto.MIM/USD",
+    "id": "0x7aa41f6ee464616f3cbc469fddfd7e63d8db319b7bd585cc95b24c29c9172916",
+    "symbol": "MIM",
+    "name": "Magic Internet Money"
+  },
+  {
+    "pythSymbol": "Crypto.HT/USD",
+    "id": "0x38e91ba416e6010735d7580472784a3e0821ab559aacdf73f5aba9d661e687ab",
+    "symbol": "HT",
+    "name": "HuobiToken"
+  },
+  {
+    "pythSymbol": "Crypto.XPRT/USD",
+    "id": "0x9f520bbc39aad043e3bbb46b05079222d63bd94c150205f2a8889b6b36a0f376",
+    "symbol": "XPRT",
+    "name": "Persistence"
+  },
+  {
+    "pythSymbol": "Crypto.USDP/USD",
+    "id": "0xa6c8eca9aea31d6bb81fd6576638f30692d4afaa73237c097c193477aa5003b3",
+    "symbol": "USDP",
+    "name": "USDP Stablecoin"
+  },
+  {
+    "pythSymbol": "Crypto.METIS/USD",
+    "id": "0xc22aa7943f65c9b1bb8d765bf4d5136590c48508f61912314f23bb730325b159",
+    "symbol": "METIS",
+    "name": "Metis Token"
+  },
+  {
+    "pythSymbol": "Crypto.RUNE/USD",
+    "id": "0x5fcf71143bb70d41af4fa9aa1287e2efd3c5911cee59f909f915c9f61baacb1e",
+    "symbol": "RUNE",
+    "name": "THORChain ETH.RUNE"
+  },
+  {
+    "pythSymbol": "Crypto.SPELL/USD",
+    "id": "0x1dcf38b0206d27849b0fcb8d2df21aff4f95873cce223f49d7c1ea3c5145ec63",
+    "symbol": "SPELL",
+    "name": "Spell Token"
+  },
+  {
+    "pythSymbol": "Crypto.USDP/USD",
+    "id": "0xa6c8eca9aea31d6bb81fd6576638f30692d4afaa73237c097c193477aa5003b3",
+    "symbol": "USDP",
+    "name": "Pax Dollar"
+  },
+  {
+    "pythSymbol": "Crypto.GUSD/USD",
+    "id": "0xe186e116f2c7642d0d8aa89c32345d83ebeb350242b2274c46a19ea82e04fb8d",
+    "symbol": "GUSD",
+    "name": "Gemini dollar"
+  },
+  {
+    "pythSymbol": "Crypto.TUSD/USD",
+    "id": "0x433faaa801ecdb6618e3897177a118b273a8e18cc3ff545aadfc207d58d028f7",
+    "symbol": "TUSD",
+    "name": "TrueUSD (PoS)"
+  },
+  {
+    "pythSymbol": "Crypto.ENJ/USD",
+    "id": "0x5cc254b7cb9532df39952aee2a6d5497b42ec2d2330c7b76147f695138dbd9f3",
+    "symbol": "ENJ",
+    "name": "Enjin Coin"
+  },
+  {
+    "pythSymbol": "Crypto.SHIB/USD",
+    "id": "0xf0d57deca57b3da2fe63a493f4c25925fdfd8edf834b20f93e1f84dbd1504d4a",
+    "symbol": "SHIB",
+    "name": "SHIBA INU"
+  },
+  {
+    "pythSymbol": "Crypto.SCA/USD",
+    "id": "0x7e17f0ac105abe9214deb9944c30264f5986bf292869c6bd8e8da3ccd92d79bc",
+    "symbol": "SCA",
+    "name": "ScaleSwapToken"
+  },
+  {
+    "pythSymbol": "Crypto.MOD/USD (Coming Soon)",
+    "id": "0x9a2a116d85a31d6f1bed19771105557276457094e31791a892758148aa54023d",
+    "symbol": "MOD",
+    "name": "MODEFI (PoS)"
+  },
+  {
+    "pythSymbol": "Crypto.AUDIO/USD",
+    "id": "0x2ea070725c82f69be1a730c1730cb229dc3ab44459f41d6f06f0b9ab551e4ddb",
+    "symbol": "AUDIO",
+    "name": "Audius"
+  },
+  {
+    "pythSymbol": "Crypto.OKB/USD",
+    "id": "0xd6f83dfeaff95d596ddec26af2ee32f391c206a183b161b7980821860eeef2f5",
+    "symbol": "OKB",
+    "name": "OKB"
+  },
+  {
+    "pythSymbol": "Crypto.CHZ/USD",
+    "id": "0xe799f456b358a2534aa1b45141d454ac04b444ed23b1440b778549bb758f2b5c",
+    "symbol": "CHZ",
+    "name": "chiliZ"
+  },
+  {
+    "pythSymbol": "Crypto.DEGEN/USD (Coming Soon)",
+    "id": "0x9c93e4a22c56885af427ac4277437e756e7ec403fbc892f975d497383bb33560",
+    "symbol": "DEGEN",
+    "name": "DEGEN Index"
+  },
+  {
+    "pythSymbol": "Crypto.ZIL/USD",
+    "id": "0x609722f3b6dc10fee07907fe86781d55eb9121cd0705b480954c00695d78f0cb",
+    "symbol": "ZIL",
+    "name": "Zilliqa"
+  },
+  {
+    "pythSymbol": "Crypto.CRV/USD",
+    "id": "0xa19d04ac696c7a6616d291c7e5d1377cc8be437c327b75adb5dc1bad745fcae8",
+    "symbol": "CRV",
+    "name": "Curve DAO Token"
+  },
+  {
+    "pythSymbol": "Crypto.PERP/USD",
+    "id": "0x944f2f908c5166e0732ea5b610599116cd8e1c41f47452697c1e84138b7184d6",
+    "symbol": "PERP",
+    "name": "Perpetual"
+  },
+  {
+    "pythSymbol": "Crypto.SYN/USD",
+    "id": "0x0afa62dff138fe0ea24e54bb875a634cc729675dab9f84462c964b2bb14c0349",
+    "symbol": "SYN",
+    "name": "Synapse"
+  },
+  {
+    "pythSymbol": "Crypto.TRB/USD",
+    "id": "0xddcd037c2de8dbf2a0f6eebf1c039924baf7ebf0e7eb3b44bf421af69cc1b06d",
+    "symbol": "TRB",
+    "name": "Tellor Tributes"
+  },
+  {
+    "pythSymbol": "Crypto.BAND/USD",
+    "id": "0x5ab188823c117b3ac791391752f95fd701d923ccffa3436ecf7ba5d4bb4bd678",
+    "symbol": "BAND",
+    "name": "Band Protocol"
+  },
+  {
+    "pythSymbol": "Crypto.AXS/USD",
+    "id": "0xb7e3904c08ddd9c0c10c6d207d390fd19e87eb6aab96304f571ed94caebdefa0",
+    "symbol": "AXS",
+    "name": "Axie Infinity Shard"
+  },
+  {
+    "pythSymbol": "Crypto.AAVE/USD",
+    "id": "0x2b9ab1e972a281585084148ba1389800799bd4be63b957507db1349314e47445",
+    "symbol": "AAVE",
+    "name": "Aave"
+  },
+  {
+    "pythSymbol": "Crypto.WETH/USD",
+    "id": "0x9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6",
+    "symbol": "WETH",
+    "name": "Wrapped Ether"
+  },
+  {
+    "pythSymbol": "Crypto.GNO/USD",
+    "id": "0xc5f60d00d926ee369ded32a38a6bd5c1e0faa936f91b987a5d0dcf3c5d8afab0",
+    "symbol": "GNO",
+    "name": "Gnosis Token"
+  },
+  {
+    "pythSymbol": "Crypto.BAT/USD",
+    "id": "0x8e860fb74e60e5736b455d82f60b3728049c348e94961add5f961b02fdee2535",
+    "symbol": "BAT",
+    "name": "Basic Attention Token"
+  },
+  {
+    "pythSymbol": "Crypto.BOBA/USD",
+    "id": "0xd1e9cff9b8399f9867819a3bf1aa8c2598234eecfd36ddc3a7bc7848432184b5",
+    "symbol": "BOBA",
+    "name": "Boba Token"
+  },
+  {
+    "pythSymbol": "Crypto.RETH/USD",
+    "id": "0xa0255134973f4fdf2f8f7808354274a3b1ebc6ee438be898d045e8b56ba1fe13",
+    "symbol": "RETH",
+    "name": "Rocket Pool ETH"
+  },
+  {
+    "pythSymbol": "Crypto.USDC/USD",
+    "id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "symbol": "USDC",
+    "name": "USD Coin"
+  },
+  {
+    "pythSymbol": "Crypto.OMG/USD",
+    "id": "0x3b4e266cfd796c642603073a8471f1bdb876a9c03ded525e4472a722298c4219",
+    "symbol": "OMG",
+    "name": "OMGToken"
+  },
+  {
+    "pythSymbol": "Crypto.SLP/USD",
+    "id": "0xfba17701be318087db58d9797d5f1e89dcf5b95773ae2227c8a8eb4cf1d4e554",
+    "symbol": "SLP",
+    "name": "SushiSwap LP Token"
+  },
+  {
+    "pythSymbol": "Crypto.ZERO/USD",
+    "id": "0x9a11b5c6c8d6d266444459316c3aee7684aaa5a5434b189a173d8cddbb3deaae",
+    "symbol": "ZERO",
+    "name": "Zero.Exchange Token"
+  },
+  {
+    "pythSymbol": "Crypto.DAI/USD",
+    "id": "0xb0948a5e5313200c632b51bb5ca32f6de0d36e9950a942d19751e833f70dabfd",
+    "symbol": "DAI",
+    "name": "Dai Stablecoin"
+  },
+  {
+    "pythSymbol": "Crypto.ZEUS/USD",
+    "id": "0x31558e9ccb18c151af6c52bf78afd03098a7aca1b9cf171a65b693b464c2f066",
+    "symbol": "ZEUS",
+    "name": "zeus"
+  },
+  {
+    "pythSymbol": "Crypto.IMX/USD",
+    "id": "0x941320a8989414874de5aa2fc340a75d5ed91fdff1613dd55f83844d52ea63a2",
+    "symbol": "IMX",
+    "name": "Immutable X"
+  },
+  {
+    "pythSymbol": "Crypto.CTSI/USD",
+    "id": "0x14eb6f846b84f37c841ce7a52a38706e54966df84b3a09cc40499b164af05672",
+    "symbol": "CTSI",
+    "name": "Cartesi Token"
+  },
+  {
+    "pythSymbol": "Crypto.CORE/USD",
+    "id": "0x9b4503710cc8c53f75c30e6e4fda1a7064680ef2e0ee97acd2e3a7c37b3c830c",
+    "symbol": "CORE",
+    "name": "cVault.finance"
+  },
+  {
+    "pythSymbol": "Crypto.PAXG/USD",
+    "id": "0x273717b49430906f4b0c230e99aa1007f83758e3199edbc887c0d06c3e332494",
+    "symbol": "PAXG",
+    "name": "Paxos Gold"
+  },
+  {
+    "pythSymbol": "Crypto.EURA/USD (Coming Soon)",
+    "id": "0x84755269cafa0a552ce2962c5ac7369a4da7aef57a01379b87736698387b793b",
+    "symbol": "EURA",
+    "name": "EURA (previously agEUR)"
+  },
+  {
+    "pythSymbol": "Crypto.IMX/USD",
+    "id": "0x941320a8989414874de5aa2fc340a75d5ed91fdff1613dd55f83844d52ea63a2",
+    "symbol": "IMX",
+    "name": "Impermax"
+  },
+  {
+    "pythSymbol": "Crypto.SAND/USD",
+    "id": "0xcb7a1d45139117f8d3da0a4b67264579aa905e3b124efede272634f094e1e9d1",
+    "symbol": "SAND",
+    "name": "SAND"
+  },
+  {
+    "pythSymbol": "Crypto.ENS/USD",
+    "id": "0xb98ab6023650bd2edc026b983fb7c2f8fa1020286f1ba6ecf3f4322cd83b72a6",
+    "symbol": "ENS",
+    "name": "Ethereum name Service"
+  },
+  {
+    "pythSymbol": "Crypto.ILV/USD",
+    "id": "0xe1cb28de6139b40cf03e15f42a89921c0650fb1c75cabfc94877830c28de30cb",
+    "symbol": "ILV",
+    "name": "Illuvium"
+  },
+  {
+    "pythSymbol": "Crypto.BLAST/USD",
+    "id": "0x057345a7e9ef0f36dca8ad1c4e5788808b85f3084cc7b0d8cb29ac5012d88f0d",
+    "symbol": "BLAST",
+    "name": "Blastoise Inu"
+  },
+  {
+    "pythSymbol": "Crypto.FLOKI/USD",
+    "id": "0x6b1381ce7e874dc5410b197ac8348162c0dd6c0d4c9cd6322672d6c2b1d58293",
+    "symbol": "FLOKI",
+    "name": "FLOKI"
+  },
+  {
+    "pythSymbol": "Crypto.SLP/USD",
+    "id": "0xfba17701be318087db58d9797d5f1e89dcf5b95773ae2227c8a8eb4cf1d4e554",
+    "symbol": "SLP",
+    "name": "Smooth Love Potion"
+  },
+  {
+    "pythSymbol": "Crypto.GRT/USD",
+    "id": "0x4d1f8dae0d96236fb98e8f47471a366ec3b1732b47041781934ca3a9bb2f35e7",
+    "symbol": "GRT",
+    "name": "The Graph"
+  },
+  {
+    "pythSymbol": "Crypto.ATOM/USD",
+    "id": "0xb00b60f88b03a6a625a8d1c048c3f66653edf217439983d037e7222c4e612819",
+    "symbol": "ATOM",
+    "name": "Cosmos"
+  },
+  {
+    "pythSymbol": "Crypto.QNT/USD",
+    "id": "0x19ab139032007c8bd7d1fd3842ef392a5434569a72b555504a5aee47df2a0a35",
+    "symbol": "QNT",
+    "name": "Quant"
+  },
+  {
+    "pythSymbol": "Crypto.GMT/USD",
+    "id": "0xbaa284eaf23edf975b371ba2818772f93dbae72836bbdea28b07d40f3cf8b485",
+    "symbol": "GMT",
+    "name": "GreenMetaverseToken"
+  },
+  {
+    "pythSymbol": "Crypto.ONE/USD",
+    "id": "0xc572690504b42b57a3f7aed6bd4aae08cbeeebdadcf130646a692fe73ec1e009",
+    "symbol": "ONE",
+    "name": "Menlo One"
+  },
+  {
+    "pythSymbol": "Crypto.KAVA/USD",
+    "id": "0xa6e905d4e85ab66046def2ef0ce66a7ea2a60871e68ae54aed50ec2fd96d8584",
+    "symbol": "KAVA",
+    "name": "Kava.io"
+  },
+  {
+    "pythSymbol": "Crypto.AKT/USD",
+    "id": "0x4ea5bb4d2f5900cc2e97ba534240950740b4d3b89fe712a94a7304fd2fd92702",
+    "symbol": "AKT",
+    "name": "Akash Network"
+  },
+  {
+    "pythSymbol": "Crypto.OSMO/USD",
+    "id": "0x5867f5683c757393a0670ef0f701490950fe93fdb006d181c8265a831ac0c5c6",
+    "symbol": "OSMO",
+    "name": "Osmosis"
+  },
+  {
+    "pythSymbol": "Crypto.RETH/USD",
+    "id": "0xa0255134973f4fdf2f8f7808354274a3b1ebc6ee438be898d045e8b56ba1fe13",
+    "symbol": "RETH",
+    "name": "StaFi"
+  },
+  {
+    "pythSymbol": "Crypto.CELR/USD",
+    "id": "0x20841878a1c4d3ea4587603e2cb55b32afae64402f281652f5a3b94155ff27e9",
+    "symbol": "CELR",
+    "name": "CelerToken"
+  },
+  {
+    "pythSymbol": "Crypto.ALICE/USD",
+    "id": "0xccca1d2b0d9a9ca72aa2c849329520a378aea0ec7ef14497e67da4050d6cf578",
+    "symbol": "ALICE",
+    "name": "ALICE"
+  },
+  {
+    "pythSymbol": "Crypto.PENDLE/USD",
+    "id": "0x9a4df90b25497f66b1afb012467e316e801ca3d839456db028892fe8c70c8016",
+    "symbol": "PENDLE",
+    "name": "Pendle"
+  },
+  {
+    "pythSymbol": "Crypto.USDC/USD",
+    "id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "symbol": "USDC",
+    "name": "nUSD"
+  },
+  {
+    "pythSymbol": "Crypto.CVX/USD",
+    "id": "0x6aac625e125ada0d2a6b98316493256ca733a5808cd34ccef79b0e28c64d1e76",
+    "symbol": "CVX",
+    "name": "Convex Token"
+  },
+  {
+    "pythSymbol": "Crypto.DYDX/USD",
+    "id": "0x6489800bb8974169adfe35937bf6736507097d13c190d760c557108c7e93a81b",
+    "symbol": "DYDX",
+    "name": "dYdX"
+  },
+  {
+    "pythSymbol": "Crypto.IDEX/USD",
+    "id": "0x6fdf9f1b31f6212aad9125dbc9d85ae6cfac3939fd914f6a8c397f01272eca8f",
+    "symbol": "IDEX",
+    "name": "IDEX Token"
+  },
+  {
+    "pythSymbol": "Crypto.STX/USD",
+    "id": "0xec7a775f46379b5e943c3526b1c8d54cd49749176b0b98e02dde68d1bd335c17",
+    "symbol": "STX",
+    "name": "Stox"
+  },
+  {
+    "pythSymbol": "Crypto.STORJ/USD",
+    "id": "0x21776e4ed1e763d580071fd6394d71e582672c788f64f4a279e60ec1497e27c4",
+    "symbol": "STORJ",
+    "name": "Storj Token"
+  },
+  {
+    "pythSymbol": "Crypto.MIR/USD",
+    "id": "0x0b46c1c04e9c914037cc4e0561a7e6787f6db0b89b7b65281f0f6fea1ce45a74",
+    "symbol": "MIR",
+    "name": "Wrapped MIR Token"
+  },
+  {
+    "pythSymbol": "Crypto.OUSD/USD",
+    "id": "0xbfaf61069ca9164aba41935fa16488ce7c39b313e7faaa02fb4655b99caada05",
+    "symbol": "OUSD",
+    "name": "Origin Dollar"
+  },
+  {
+    "pythSymbol": "Crypto.LINK/USD",
+    "id": "0x8ac0c70fff57e9aefdf5edf44b51d62c2d433653cbb2cf5cc06bb115af04d221",
+    "symbol": "LINK",
+    "name": "ChainLink Token"
+  },
+  {
+    "pythSymbol": "Crypto.WETH/USD",
+    "id": "0x9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6",
+    "symbol": "WETH",
+    "name": "Wrapped Ether"
+  },
+  {
+    "pythSymbol": "Crypto.KNC/USD",
+    "id": "0xb9ccc817bfeded3926af791f09f76c5ffbc9b789cac6e9699ec333a79cacbe2a",
+    "symbol": "KNC",
+    "name": "Kyber Network Crystal"
+  },
+  {
+    "pythSymbol": "Crypto.DODO/USD",
+    "id": "0x688aa41b26a19db08855aaf87723a0eda91b8a830b782c3215bca3b208fad81a",
+    "symbol": "DODO",
+    "name": "DODO bird"
+  },
+  {
+    "pythSymbol": "Crypto.LDO/USD",
+    "id": "0xc63e2a7f37a04e5e614c07238bedb25dcc38927fba8fe890597a593c0b2fa4ad",
+    "symbol": "LDO",
+    "name": "Lido DAO Token (PoS)"
+  },
+  {
+    "pythSymbol": "Crypto.STETH/ETH",
+    "id": "0x3af6a3098c56f58ff47cc46dee4a5b1910e5c157f7f0b665952445867470d61f",
+    "symbol": "STETH",
+    "name": "Liquid staked Ether 2.0"
+  },
+  {
+    "pythSymbol": "Crypto.STETH/USD",
+    "id": "0x846ae1bdb6300b817cee5fdee2a6da192775030db5615b94a465f53bd40850b5",
+    "symbol": "STETH",
+    "name": "Liquid staked Ether 2.0"
+  },
+  {
+    "pythSymbol": "Crypto.AXS/USD",
+    "id": "0xb7e3904c08ddd9c0c10c6d207d390fd19e87eb6aab96304f571ed94caebdefa0",
+    "symbol": "AXS",
+    "name": "Axie Infinity Shard"
+  },
+  {
+    "pythSymbol": "Crypto.INF/USD",
+    "id": "0xf51570985c642c49c2d6e50156390fdba80bb6d5f7fa389d2f012ced4f7d208f",
+    "symbol": "INF",
+    "name": "Infinity Diamond"
+  },
+  {
+    "pythSymbol": "Crypto.FLOKI/USD",
+    "id": "0x6b1381ce7e874dc5410b197ac8348162c0dd6c0d4c9cd6322672d6c2b1d58293",
+    "symbol": "FLOKI",
+    "name": "FLOKI INU"
+  },
+  {
+    "pythSymbol": "Crypto.FLOKI/USD",
+    "id": "0x6b1381ce7e874dc5410b197ac8348162c0dd6c0d4c9cd6322672d6c2b1d58293",
+    "symbol": "FLOKI",
+    "name": "Floki Inu"
+  },
+  {
+    "pythSymbol": "Crypto.KNC/USD",
+    "id": "0xb9ccc817bfeded3926af791f09f76c5ffbc9b789cac6e9699ec333a79cacbe2a",
+    "symbol": "KNC",
+    "name": "Kyber Network Crystal v2"
+  },
+  {
+    "pythSymbol": "Crypto.BNB/USD",
+    "id": "0x2f95862b045670cd22bee3114c39763a4a08beeb663b145d283c31d7d1101c4f",
+    "symbol": "BNB",
+    "name": "BNB"
+  },
+  {
+    "pythSymbol": "Crypto.CRO/USD",
+    "id": "0x23199c2bcb1303f667e733b9934db9eca5991e765b45f5ed18bc4b231415f2fe",
+    "symbol": "CRO",
+    "name": "CRO"
+  },
+  {
+    "pythSymbol": "Crypto.LQTY/USD",
+    "id": "0x5e8b35b0da37ede980d8f4ddaa7988af73d8c3d110e3eddd2a56977beb839b63",
+    "symbol": "LQTY",
+    "name": "LQTY"
+  },
+  {
+    "pythSymbol": "Crypto.IOTX/USD",
+    "id": "0xa83103141916013b5679001e273281303a6c05f4cebd94da00a785bd74d1e6d8",
+    "symbol": "IOTX",
+    "name": "IoTeX Network"
+  },
+  {
+    "pythSymbol": "Crypto.ELON/USD",
+    "id": "0xc9cf25cd0df326b7fb3548b37d38e1e5c6ba202188a44ad98b79335c2b202f7b",
+    "symbol": "ELON",
+    "name": "Dogelon"
+  },
+  {
+    "pythSymbol": "Crypto.ANKR/USD",
+    "id": "0x89a58e1cab821118133d6831f5018fba5b354afb78b2d18f575b3cbf69a4f652",
+    "symbol": "ANKR",
+    "name": "Ankr Network"
+  },
+  {
+    "pythSymbol": "Crypto.LRC/USD",
+    "id": "0x20311405c2fc648cf5733197e95c03512af9cf64f2260aea7e212a8c8b7bdcfa",
+    "symbol": "LRC",
+    "name": "LoopringCoin V2"
+  },
+  {
+    "pythSymbol": "Crypto.CELO/USD",
+    "id": "0x7d669ddcdd23d9ef1fa9a9cc022ba055ec900e91c4cb960f3c20429d4447a411",
+    "symbol": "CELO",
+    "name": "Celo"
+  },
+  {
+    "pythSymbol": "Crypto.LUSD/USD",
+    "id": "0xc9dc99720306ef43fd301396a6f8522c8be89c6c77e8c27d87966918a943fd20",
+    "symbol": "LUSD",
+    "name": "LUSD Stablecoin"
+  },
+  {
+    "pythSymbol": "Crypto.FTM/USD",
+    "id": "0x5c6c0d2386e3352356c3ab84434fafb5ea067ac2678a38a338c4a69ddc4bdb0c",
+    "symbol": "FTM",
+    "name": "Fantom Token"
+  },
+  {
+    "pythSymbol": "Crypto.RPL/USD",
+    "id": "0x24f94ac0fd8638e3fc41aab2e4df933e63f763351b640bf336a6ec70651c4503",
+    "symbol": "RPL",
+    "name": "Rocket Pool"
+  },
+  {
+    "pythSymbol": "Crypto.BTT/USD",
+    "id": "0x097d687437374051c75160d648800f021086bc8edf469f11284491fda8192315",
+    "symbol": "BTT",
+    "name": "BoughtThe.top"
+  },
+  {
+    "pythSymbol": "Crypto.INJ/USD",
+    "id": "0x7a5bc1d2b56ad029048cd63964b3ad2776eadf812edc1a43a31406cb54bff592",
+    "symbol": "INJ",
+    "name": "Injective Token"
+  },
+  {
+    "pythSymbol": "Crypto.AKT/USD",
+    "id": "0x4ea5bb4d2f5900cc2e97ba534240950740b4d3b89fe712a94a7304fd2fd92702",
+    "symbol": "AKT",
+    "name": "akash.network"
+  },
+  {
+    "pythSymbol": "Crypto.THETA/USD",
+    "id": "0xee70804471fe22d029ac2d2b00ea18bbf4fb062958d425e5830fd25bed430345",
+    "symbol": "THETA",
+    "name": "Theta Token"
+  },
+  {
+    "pythSymbol": "Crypto.SNX/USD",
+    "id": "0x39d020f60982ed892abbcd4a06a276a9f9b7bfbce003204c110b6e488f502da3",
+    "symbol": "SNX",
+    "name": "Synthetix Network Token"
+  },
+  {
+    "pythSymbol": "Crypto.RSR/USD",
+    "id": "0xfb7565b77267ba3f6ef770bed5d7f9b22b8542db676dbd9b934a2fcf945f4371",
+    "symbol": "RSR",
+    "name": "Reserve Rights"
+  },
+  {
+    "pythSymbol": "Crypto.TBTC/USD",
+    "id": "0x56a3121958b01f99fdc4e1fd01e81050602c7ace3a571918bb55c6a96657cca9",
+    "symbol": "TBTC",
+    "name": "tBTC"
+  },
+  {
+    "pythSymbol": "Crypto.SXP/USD",
+    "id": "0x13b82e2a3f97f39504638b45aeab690ab47fd975f9a2e689cac3c77089f26f4d",
+    "symbol": "SXP",
+    "name": "Swipe"
+  },
+  {
+    "pythSymbol": "Crypto.LUNA/USD",
+    "id": "0xe6ccd3f878cf338e6732bf59f60943e8ca2c28402fc4d9c258503b2edbe74a31",
+    "symbol": "LUNA",
+    "name": "Wrapped LUNA Token"
+  },
+  {
+    "pythSymbol": "Crypto.BAT/USD",
+    "id": "0x8e860fb74e60e5736b455d82f60b3728049c348e94961add5f961b02fdee2535",
+    "symbol": "BAT",
+    "name": "bat token"
+  },
+  {
+    "pythSymbol": "Crypto.SUSHI/USD",
+    "id": "0x26e4f737fde0263a9eea10ae63ac36dcedab2aaf629261a994e1eeb6ee0afe53",
+    "symbol": "SUSHI",
+    "name": "SushiToken"
+  },
+  {
+    "pythSymbol": "Crypto.MEME/USD",
+    "id": "0xcd2cee36951a571e035db0dfad138e6ecdb06b517cc3373cd7db5d3609b7927c",
+    "symbol": "MEME",
+    "name": "MEME"
+  },
+  {
+    "pythSymbol": "Crypto.AMP/USD",
+    "id": "0xd37e4513ebe235fff81e453d400debaf9a49a5df2b7faa11b3831d35d7e72cb7",
+    "symbol": "AMP",
+    "name": "Amp"
+  },
+  {
+    "pythSymbol": "Crypto.QUICK/USD",
+    "id": "0xd28fd418fef97f1b21f72a6bc39687b52ab368d291a5ee8f16e6033ec81c81d8",
+    "symbol": "QUICK",
+    "name": "Quickswap"
+  },
+  {
+    "pythSymbol": "Crypto.UNI/USD",
+    "id": "0x78d185a741d07edb3412b09008b7c5cfb9bbbd7d568bf00ba737b456ba171501",
+    "symbol": "UNI",
+    "name": "Uniswap"
+  },
+  {
+    "pythSymbol": "Crypto.QUICK/USD",
+    "id": "0xd28fd418fef97f1b21f72a6bc39687b52ab368d291a5ee8f16e6033ec81c81d8",
+    "symbol": "QUICK",
+    "name": "Quickswap"
+  },
+  {
+    "pythSymbol": "Crypto.MANA/USD",
+    "id": "0x1dfffdcbc958d732750f53ff7f06d24bb01364b3f62abea511a390c74b8d16a5",
+    "symbol": "MANA",
+    "name": "Decentraland"
+  },
+  {
+    "pythSymbol": "Crypto.YFI/USD",
+    "id": "0x425f4b198ab2504936886c1e93511bb6720fbcf2045a4f3c0723bb213846022f",
+    "symbol": "YFI",
+    "name": "yearn finance"
+  },
+  {
+    "pythSymbol": "Crypto.COMP/USD",
+    "id": "0x4a8e42861cabc5ecb50996f92e7cfa2bce3fd0a2423b0c44c9b423fb2bd25478",
+    "symbol": "COMP",
+    "name": "Compound"
+  },
+  {
+    "pythSymbol": "Crypto.STG/USD",
+    "id": "0x008546b175392b878c5c7ff0b6327b1cb12669be012fc2935c09a16fc8f6c58f",
+    "symbol": "STG",
+    "name": "StargateToken"
+  },
+  {
+    "pythSymbol": "Crypto.SOL/USD",
+    "id": "0xef0d8b6fda2ceba41da15d4095d1da392a0d2f8ed0c6c7bc0f4cfac8c280b56d",
+    "symbol": "SOL",
+    "name": "Wrapped SOL"
+  },
+  {
+    "pythSymbol": "Crypto.GNS/USD",
+    "id": "0x5a5d5f7fb72cc84b579d74d1c06d258d751962e9a010c0b1cce7e6023aacb71b",
+    "symbol": "GNS",
+    "name": "Gains Network"
+  },
+  {
+    "pythSymbol": "Crypto.ZRO/USD",
+    "id": "0x3bd860bea28bf982fa06bcf358118064bb114086cc03993bd76197eaab0b8018",
+    "symbol": "ZRO",
+    "name": "LayerZero"
+  },
+  {
+    "pythSymbol": "Crypto.USDA/USD (Coming Soon)",
+    "id": "0x3a1050a3c03354c94ed44acf808327f05b7f9d610f38644684f5ce4796cce27b",
+    "symbol": "USDA",
+    "name": "USDA"
+  },
+  {
+    "pythSymbol": "Crypto.FRAX/USD",
+    "id": "0xc3d5d8d6d17081b3d0bbca6e2fa3a6704bb9a9561d9f9e1dc52db47629f862ad",
+    "symbol": "FRAX",
+    "name": "Frax"
+  },
+  {
+    "pythSymbol": "Crypto.AVAX/USD",
+    "id": "0x93da3352f9f1d105fdfe4971cfa80e9dd777bfc5d0f683ebb6e1294b92137bb7",
+    "symbol": "AVAX",
+    "name": "Avalanche Token"
+  },
+  {
+    "pythSymbol": "Crypto.BUSD/USD (Coming Soon)",
+    "id": "0x5bc91f13e412c07599167bae86f07543f076a638962b8d6017ec19dab4a82814",
+    "symbol": "BUSD",
+    "name": "BUSD Token"
+  },
+  {
+    "pythSymbol": "Crypto.MIM/USD",
+    "id": "0x7aa41f6ee464616f3cbc469fddfd7e63d8db319b7bd585cc95b24c29c9172916",
+    "symbol": "MIM",
+    "name": "MAGIC INTERNET MONEY"
+  },
+  {
+    "pythSymbol": "Crypto.WLD/USD",
+    "id": "0xd6835ad1f773de4a378115eb6824bd0c0e42d84d1c84d9750e853fb6b6c7794a",
+    "symbol": "WLD",
+    "name": "wLitiDAO"
+  },
+  {
+    "pythSymbol": "Crypto.FXS/USD",
+    "id": "0x735f591e4fed988cd38df74d8fcedecf2fe8d9111664e0fd500db9aa78b316b1",
+    "symbol": "FXS",
+    "name": "Frax Shares"
+  },
+  {
+    "pythSymbol": "Crypto.BIFI/USD",
+    "id": "0x70cd05521e3bdeaee2cadc1360f0d95397f03275f273199be35a029114f53a3b",
+    "symbol": "BIFI",
+    "name": "beefy.finance"
+  }
+]
