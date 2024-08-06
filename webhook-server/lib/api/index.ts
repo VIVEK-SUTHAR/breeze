@@ -2,17 +2,13 @@ export type Method = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
 
 export default async function createRequest<RES, BODY = null>(
   route: string,
-  method: Method,
-  body?: BODY,
+  body: BODY,
   auth_token?: string,
   api_url?: string,
   custom_headers?: Record<string, string>,
   queryParams?: Record<string, string | number | boolean>,
   resInText?: boolean
 ): Promise<RES> {
-  if (method === "GET" && body)
-    throw new Error("GET requests cannot have a body");
-
   let url = `${api_url}${route}`;
   let token;
 
@@ -27,7 +23,7 @@ export default async function createRequest<RES, BODY = null>(
   }
 
   const res = await fetch(url, {
-    method,
+    method: "POST",
     body: body && JSON.stringify(body),
     headers: {
       "content-type": "application/json",
@@ -45,6 +41,8 @@ export default async function createRequest<RES, BODY = null>(
     if (resInText) {
       throw new Error(await res.text());
     }
+    console.log(res.json());
+    
     throw new Error(await res.json());
   }
   let data: RES;

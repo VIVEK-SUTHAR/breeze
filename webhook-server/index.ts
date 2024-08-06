@@ -5,6 +5,7 @@ import { addListener } from "process";
 import { WebhookEvent } from "./lib/types/EventData";
 import fetchTxnData from "./lib/api/socket.api";
 
+
 const PORT = 3000;
 
 const app = express();
@@ -28,6 +29,8 @@ app.post("/webhook", (req: Request, res: Response) => {
         eventData.data.new.dest_token,
         eventData.data.new.amount
       );
+
+      console.log("txnData", txnData);
 
       //To-Do: Use TxnData to Call Contract from EOA.
     },
