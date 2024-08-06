@@ -66,6 +66,7 @@ function findPythtoSocketToken(cryptoData, apiData) {
             ...crypto,
             symbol: token.symbol,
             name: token.name,
+            address: token.address,
           });
         }
       }
@@ -84,11 +85,11 @@ function findPythtoSocketToken(cryptoData, apiData) {
     fs.writeFileSync(
       outputFilePath,
       JSON.stringify(matchingEntries, null, 2),
-      "utf-8",
+      "utf-8"
     );
 
     console.log(
-      `Socket<>Pyth PriceIDs written total tokens: ${matchingEntries.length}`,
+      `Socket<>Pyth PriceIDs written total tokens: ${matchingEntries.length}`
     );
   } catch (error) {
     console.error("An error occurred:", error);
