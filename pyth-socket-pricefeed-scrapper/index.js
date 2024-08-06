@@ -4,17 +4,15 @@ const axios = require("axios");
 const fs = require("fs");
 
 const PythURL = "https://pyth.network/developers/price-feed-ids";
-const SocketAPI =
-  "https://api.socket.tech/v2/token-lists/from-token-list?fromChainId=137";
+const SocketAPI = "https://api.socket.tech/v2/token-lists/chain?chainId=42220&isShortList=true";
 const apiKey = "72a5b4b0-e727-48be-8aa1-5da9d62fe635";
-const outputFilePath = "SupportedTokens.json";
-const screenshotPath = "pyth_price_ids_page.png";
+const outputFilePath = "SupportedTokens-42220.json";
+
 async function scrapePythPriceIDs() {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   console.log("Opening Pyth PriceIDs Page...");
   await page.goto(PythURL);
-  await page.screenshot({ path: screenshotPath });
   await page.waitForSelector("tr.border-t.border-beige-300");
 
   console.log("Scraping PriceIDs...");

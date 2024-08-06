@@ -1,0 +1,44 @@
+[
+  {
+    "pythSymbol": "Crypto.ETH/BTC",
+    "id": "0xc96458d393fe9deb7a7d63a0ac41e2898a67a7750dbd166673279e06c868df0a",
+    "symbol": "ETH",
+    "name": "Ether",
+    "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+  },
+  {
+    "pythSymbol": "Crypto.ETH/USD",
+    "id": "0xff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",
+    "symbol": "ETH",
+    "name": "Ether",
+    "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+  },
+  {
+    "pythSymbol": "Crypto.WETH/USD",
+    "id": "0x9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6",
+    "symbol": "WETH",
+    "name": "Weth",
+    "address": "0x4200000000000000000000000000000000000006"
+  },
+  {
+    "pythSymbol": "Crypto.USDC/USD",
+    "id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "symbol": "USDC",
+    "name": "Bridged USDC",
+    "address": "0xd988097fb8612cc24eec14542bc03424c656005f"
+  },
+  {
+    "pythSymbol": "Crypto.USDT/USD",
+    "id": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "symbol": "USDT",
+    "name": "Tether USD",
+    "address": "0xf0f161fda2712db8b566946122a5af183995e2ed"
+  },
+  {
+    "pythSymbol": "Crypto.DAI/USD",
+    "id": "0xb0948a5e5313200c632b51bb5ca32f6de0d36e9950a942d19751e833f70dabfd",
+    "symbol": "DAI",
+    "name": "Dai Stablecoin",
+    "address": "0xe7798f023fc62146e8aa1b36da45fb70855a77ea"
+  }
+]

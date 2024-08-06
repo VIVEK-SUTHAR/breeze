@@ -1,0 +1,240 @@
+[
+  {
+    "pythSymbol": "Crypto.AMP/USD",
+    "id": "0xd37e4513ebe235fff81e453d400debaf9a49a5df2b7faa11b3831d35d7e72cb7",
+    "symbol": "AMP",
+    "name": "Amp",
+    "address": "0x0621d647cecbfb64b79e44302c1933cb4f27054d"
+  },
+  {
+    "pythSymbol": "Crypto.USDC/USD",
+    "id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "symbol": "USDC",
+    "name": "Native USD Coin (POS)",
+    "address": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359"
+  },
+  {
+    "pythSymbol": "Crypto.MATIC/USD",
+    "id": "0x5de33a9112c2b700b8d30b8a3402c103578ccfa2765696471cc672bd5cf6ac52",
+    "symbol": "MATIC",
+    "name": "MATIC",
+    "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+  },
+  {
+    "pythSymbol": "Crypto.MIM/USD",
+    "id": "0x7aa41f6ee464616f3cbc469fddfd7e63d8db319b7bd585cc95b24c29c9172916",
+    "symbol": "MIM",
+    "name": "MAGIC INTERNET MONEY",
+    "address": "0x49a0400587a7f65072c87c4910449fdcc5c47242"
+  },
+  {
+    "pythSymbol": "Crypto.ENS/USD",
+    "id": "0xb98ab6023650bd2edc026b983fb7c2f8fa1020286f1ba6ecf3f4322cd83b72a6",
+    "symbol": "ENS",
+    "name": "Ethereum name Service",
+    "address": "0xbd7a5cf51d22930b8b3df6d834f9bcef90ee7c4f"
+  },
+  {
+    "pythSymbol": "Crypto.MKR/USD",
+    "id": "0x9375299e31c0deb9c6bc378e6329aab44cb48ec655552a70d4b9050346a30378",
+    "symbol": "MKR",
+    "name": "Maker",
+    "address": "0x6f7c932e7684666c9fd1d44527765433e01ff61d"
+  },
+  {
+    "pythSymbol": "Crypto.STORJ/USD",
+    "id": "0x21776e4ed1e763d580071fd6394d71e582672c788f64f4a279e60ec1497e27c4",
+    "symbol": "STORJ",
+    "name": "Storj Token",
+    "address": "0xd72357daca2cf11a5f155b9ff7880e595a3f5792"
+  },
+  {
+    "pythSymbol": "Crypto.UMA/USD",
+    "id": "0x4b78d251770732f6304b1f41e9bebaabc3b256985ef18988f6de8d6562dd254c",
+    "symbol": "UMA",
+    "name": "UMA Voting Token v1",
+    "address": "0x3066818837c5e6ed6601bd5a91b0762877a6b731"
+  },
+  {
+    "pythSymbol": "Crypto.COMP/USD",
+    "id": "0x4a8e42861cabc5ecb50996f92e7cfa2bce3fd0a2423b0c44c9b423fb2bd25478",
+    "symbol": "COMP",
+    "name": "Compound",
+    "address": "0x8505b9d2254a7ae468c0e9dd10ccea3a837aef5c"
+  },
+  {
+    "pythSymbol": "Crypto.CRV/USD",
+    "id": "0xa19d04ac696c7a6616d291c7e5d1377cc8be437c327b75adb5dc1bad745fcae8",
+    "symbol": "CRV",
+    "name": "Curve DAO Token",
+    "address": "0x172370d5cd63279efa6d502dab29171933a610af"
+  },
+  {
+    "pythSymbol": "Crypto.GNO/USD",
+    "id": "0xc5f60d00d926ee369ded32a38a6bd5c1e0faa936f91b987a5d0dcf3c5d8afab0",
+    "symbol": "GNO",
+    "name": "Gnosis Token",
+    "address": "0x5ffd62d3c3ee2e81c00a7b9079fb248e7df024a8"
+  },
+  {
+    "pythSymbol": "Crypto.GRT/USD",
+    "id": "0x4d1f8dae0d96236fb98e8f47471a366ec3b1732b47041781934ca3a9bb2f35e7",
+    "symbol": "GRT",
+    "name": "The Graph",
+    "address": "0x5fe2b58c013d7601147dcdd68c143a77499f5531"
+  },
+  {
+    "pythSymbol": "Crypto.KNC/USD",
+    "id": "0xb9ccc817bfeded3926af791f09f76c5ffbc9b789cac6e9699ec333a79cacbe2a",
+    "symbol": "KNC",
+    "name": "Kyber Network Crystal",
+    "address": "0x324b28d6565f784d596422b0f2e5ab6e9cfa1dc7"
+  },
+  {
+    "pythSymbol": "Crypto.LINK/USD",
+    "id": "0x8ac0c70fff57e9aefdf5edf44b51d62c2d433653cbb2cf5cc06bb115af04d221",
+    "symbol": "LINK",
+    "name": "ChainLink Token",
+    "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39"
+  },
+  {
+    "pythSymbol": "Crypto.LRC/USD",
+    "id": "0x20311405c2fc648cf5733197e95c03512af9cf64f2260aea7e212a8c8b7bdcfa",
+    "symbol": "LRC",
+    "name": "LoopringCoin V2",
+    "address": "0x84e1670f61347cdaed56dcc736fb990fbb47ddc1"
+  },
+  {
+    "pythSymbol": "Crypto.CBETH/USD",
+    "id": "0x15ecddd26d49e1a8f1de9376ebebc03916ede873447c1255d2d5891b92ce5717",
+    "symbol": "CBETH",
+    "name": "Coinbase Wrapped Staked ETH",
+    "address": "0x4b4327db1600b8b1440163f667e199cef35385f5"
+  },
+  {
+    "pythSymbol": "Crypto.WSTETH/USD",
+    "id": "0x6df640f3b8963d8f8358f791f352b8364513f6ab1cca5ed3f1f7b5448980e784",
+    "symbol": "WSTETH",
+    "name": "Wrapped Staked ETH",
+    "address": "0x03b54a6e9a984069379fae1a4fc4dbae93b3bccd"
+  },
+  {
+    "pythSymbol": "Crypto.ZRO/USD",
+    "id": "0x3bd860bea28bf982fa06bcf358118064bb114086cc03993bd76197eaab0b8018",
+    "symbol": "ZRO",
+    "name": "LayerZero",
+    "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+  },
+  {
+    "pythSymbol": "Crypto.RETH/USD",
+    "id": "0xa0255134973f4fdf2f8f7808354274a3b1ebc6ee438be898d045e8b56ba1fe13",
+    "symbol": "RETH",
+    "name": "Rocket Pool ETH",
+    "address": "0x0266f4f08d82372cf0fcbccc0ff74309089c74d1"
+  },
+  {
+    "pythSymbol": "Crypto.LUSD/USD",
+    "id": "0xc9dc99720306ef43fd301396a6f8522c8be89c6c77e8c27d87966918a943fd20",
+    "symbol": "LUSD",
+    "name": "LUSD Stablecoin",
+    "address": "0x23001f892c0c82b79303edc9b9033cd190bb21c7"
+  },
+  {
+    "pythSymbol": "Crypto.FXS/USD",
+    "id": "0x735f591e4fed988cd38df74d8fcedecf2fe8d9111664e0fd500db9aa78b316b1",
+    "symbol": "FXS",
+    "name": "Frax Shares",
+    "address": "0x1a3acf6d19267e2d3e7f898f42803e90c9219062"
+  },
+  {
+    "pythSymbol": "Crypto.FRAX/USD",
+    "id": "0xc3d5d8d6d17081b3d0bbca6e2fa3a6704bb9a9561d9f9e1dc52db47629f862ad",
+    "symbol": "FRAX",
+    "name": "Frax",
+    "address": "0x45c32fa6df82ead1e2ef74d17b76547eddfaff89"
+  },
+  {
+    "pythSymbol": "Crypto.AAVE/USD",
+    "id": "0x2b9ab1e972a281585084148ba1389800799bd4be63b957507db1349314e47445",
+    "symbol": "AAVE",
+    "name": "Aave",
+    "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b"
+  },
+  {
+    "pythSymbol": "Crypto.BAL/USD",
+    "id": "0x07ad7b4a7662d19a6bc675f6b467172d2f3947fa653ca97555a9b20236406628",
+    "symbol": "BAL",
+    "name": "Balancer",
+    "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3"
+  },
+  {
+    "pythSymbol": "Crypto.BAND/USD",
+    "id": "0x5ab188823c117b3ac791391752f95fd701d923ccffa3436ecf7ba5d4bb4bd678",
+    "symbol": "BAND",
+    "name": "Band Protocol",
+    "address": "0xa8b1e0764f85f53dfe21760e8afe5446d82606ac"
+  },
+  {
+    "pythSymbol": "Crypto.MANA/USD",
+    "id": "0x1dfffdcbc958d732750f53ff7f06d24bb01364b3f62abea511a390c74b8d16a5",
+    "symbol": "MANA",
+    "name": "Decentraland",
+    "address": "0xa1c57f48f0deb89f569dfbe6e2b7f46d33606fd4"
+  },
+  {
+    "pythSymbol": "Crypto.SNX/USD",
+    "id": "0x39d020f60982ed892abbcd4a06a276a9f9b7bfbce003204c110b6e488f502da3",
+    "symbol": "SNX",
+    "name": "Synthetix Network Token",
+    "address": "0x50b728d8d964fd00c2d0aad81718b71311fef68a"
+  },
+  {
+    "pythSymbol": "Crypto.TBTC/USD",
+    "id": "0x56a3121958b01f99fdc4e1fd01e81050602c7ace3a571918bb55c6a96657cca9",
+    "symbol": "TBTC",
+    "name": "tBTC",
+    "address": "0x50a4a434247089848991dd8f09b889d4e2870ab6"
+  },
+  {
+    "pythSymbol": "Crypto.UNI/USD",
+    "id": "0x78d185a741d07edb3412b09008b7c5cfb9bbbd7d568bf00ba737b456ba171501",
+    "symbol": "UNI",
+    "name": "Uniswap",
+    "address": "0xb33eaad8d922b1083446dc23f610c2567fb5180f"
+  },
+  {
+    "pythSymbol": "Crypto.WBTC/USD",
+    "id": "0xc9d8b075a5c69303365ae23633d4e085199bf5c520a3b90fed1322a0342ffc33",
+    "symbol": "WBTC",
+    "name": "Wrapped BTC",
+    "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"
+  },
+  {
+    "pythSymbol": "Crypto.YFI/USD",
+    "id": "0x425f4b198ab2504936886c1e93511bb6720fbcf2045a4f3c0723bb213846022f",
+    "symbol": "YFI",
+    "name": "yearn finance",
+    "address": "0xda537104d6a5edd53c6fbba9a898708e465260b6"
+  },
+  {
+    "pythSymbol": "Crypto.DAI/USD",
+    "id": "0xb0948a5e5313200c632b51bb5ca32f6de0d36e9950a942d19751e833f70dabfd",
+    "symbol": "DAI",
+    "name": "Dai Stablecoin",
+    "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063"
+  },
+  {
+    "pythSymbol": "Crypto.USDT/USD",
+    "id": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "symbol": "USDT",
+    "name": "Tether USD",
+    "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+  },
+  {
+    "pythSymbol": "Crypto.WETH/USD",
+    "id": "0x9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6",
+    "symbol": "WETH",
+    "name": "Wrapped Ether",
+    "address": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+  }
+]

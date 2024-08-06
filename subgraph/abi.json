@@ -46,9 +46,9 @@
       },
       {
         "indexed": false,
-        "internalType": "bytes32",
+        "internalType": "string",
         "name": "targetPrice",
-        "type": "bytes32"
+        "type": "string"
       }
     ],
     "name": "BridgeInitiated",
@@ -153,9 +153,9 @@
         "type": "uint256"
       },
       {
-        "internalType": "bytes32",
+        "internalType": "string",
         "name": "targetPrice",
-        "type": "bytes32"
+        "type": "string"
       }
     ],
     "name": "initiateBridging",
@@ -217,9 +217,9 @@
         "type": "bool"
       },
       {
-        "internalType": "bytes32",
+        "internalType": "string",
         "name": "targetPrice",
-        "type": "bytes32"
+        "type": "string"
       }
     ],
     "stateMutability": "view",
