@@ -1,47 +1,30 @@
+import cluster from "cluster";
+import os from "os";
+import express from "express";
 import bodyParser from "body-parser";
-import express, { Request, Response } from "express";
-import { setupWatcher } from "./lib/priceWatch";
-import { addListener } from "process";
-import { WebhookEvent } from "./lib/types/EventData";
-import fetchTxnData from "./lib/api/socket.api";
-import executeTrade from "./lib/utils/excuteTrade";
+import { Request, Response } from "express";
+import { registerLimitOrder } from "./lib/limit-order";
+import { initializeHashMap } from "./lib/utils/chainTokensMap";
 
 const PORT = 3000;
 
-const app = express();
-
-app.use(bodyParser.json());
-
-app.post("/webhook", (req: Request, res: Response) => {
-  console.log("Webhook", req.body);
-  const eventData = req.body as WebhookEvent;
-  setupWatcher({
-    priceToWatch: parseFloat(eventData.data.new.target_price),
-    tokenToWatch:
-      "2b9ab1e972a281585084148ba1389800799bd4be63b957507db1349314e47445",
-    onPriceReached: async () => {
-      console.log("Price reached");
-      const txnData = await fetchTxnData(
-        eventData.data.new.source_chain,
-        eventData.data.new.dest_chain,
-        eventData.data.new.source_token,
-        eventData.data.new.dest_token,
-        eventData.data.new.amount,
-        eventData.data.new.user
-      );
-
-      console.log("txnData", txnData);
-
-      //To-Do: Use TxnData to Call Contract from EOA.
-
-      if (txnData) {
-        await executeTrade(txnData, eventData.data.new.transfer_id);
-      }
-    },
+if (cluster.isPrimary) {
+  const numCPUs = os.cpus().length;
+  console.log(`${numCPUs} Workers started`);
+  for (let i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
+  cluster.on("exit", (worker, code, signal) => {
+    console.log(`Worker ${worker.process.pid} died`);
   });
-  res.status(200).send("Webhook received");
-});
-
-app.listen(PORT, () => {
-  console.log(`WebHook server is running on port ${PORT}`);
-});
+} else {
+  const app = express();
+  initializeHashMap();
+  app.use(bodyParser.json());
+  app.post("/webhook", (req: Request, res: Response) => {
+    registerLimitOrder(req, res);
+  });
+  app.listen(PORT, () => {
+    console.log(`Worker ${process.pid} started on port ${PORT}`);
+  });
+}
