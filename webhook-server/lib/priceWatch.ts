@@ -61,14 +61,11 @@ class TokenPriceWatcher {
       const params = new URLSearchParams();
       tokenIds.forEach((id) => params.append("ids[]", id));
 
-      console.log('params', params);
-      console.log('url', `${this.url}?${params.toString()}`);
-      
-      
+      console.log("params", params);
+      console.log("url", `${this.url}?${params.toString()}`);
 
       const response = await fetch(`${this.url}?${params.toString()}`);
-     
-      
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -83,8 +80,15 @@ class TokenPriceWatcher {
   }
 
   private checkPrice(data: PriceData): void {
-    const options = this.watchOptions.get(data.id);
+    console.log("I got called", data.id);
+    console.log("this watch options", this.watchOptions);
+    
+
+    const options = this.watchOptions.get(`0x${data.id}`);
+    console.log("options", options);
+
     if (!options) return;
+    console.log("there are options");
 
     const currentPrice =
       parseFloat(data.price.price) * Math.pow(10, data.price.expo);
@@ -95,17 +99,19 @@ class TokenPriceWatcher {
       currentPrice > options.priceToWatch
     ) {
       console.log(
-        `Price reached for token ${data.id}: ${currentPrice.toFixed(8)} (Target: ${options.priceToWatch})`,
+        `Price reached for token 0x${data.id}: ${currentPrice.toFixed(
+          8
+        )} (Target: ${options.priceToWatch})`
       );
       options.onPriceReached();
-      this.removeWatchOption(data.id);
-      console.log(`Stopped watching token ${data.id}`);
+      this.removeWatchOption(`0x${data.id}`);
+      console.log(`Stopped watching token 0x${data.id}`);
     }
   }
 }
 
 export async function setupWatcher(
-  options: TokenPriceWatchOptions,
+  options: TokenPriceWatchOptions
 ): Promise<void> {
   const watcher = new TokenPriceWatcher();
   watcher.addWatchOption(options);

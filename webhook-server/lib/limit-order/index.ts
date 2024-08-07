@@ -18,7 +18,7 @@ export function registerLimitOrder(req: Request, res: Response) {
   console.log("PythID for token", hashmap?.get(key));
   const pythId = hashmap?.get(key);
 
-  console.log("this is pythId", pythId);
+  console.log("this is pythId", pythId, eventData.data.new.target_price);
 
   if (!pythId) {
     res.status(200).send("Webhook received");
