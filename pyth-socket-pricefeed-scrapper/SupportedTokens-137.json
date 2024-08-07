@@ -18,7 +18,7 @@
     "id": "0x5de33a9112c2b700b8d30b8a3402c103578ccfa2765696471cc672bd5cf6ac52",
     "symbol": "MATIC",
     "name": "MATIC",
-    "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    "address": "0x0000000000000000000000000000000000000000"
   },
   {
     "pythSymbol": "Crypto.MIM/USD",
