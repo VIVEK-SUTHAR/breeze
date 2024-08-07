@@ -9,6 +9,20 @@ export default async function executeTrade(
   try {
     if (txnData.approvalData) {
       console.log("erc20 trade");
+      const hash = await client.writeContract({
+        abi,
+        address: BREEZEGATEWAYADDRESS,
+        functionName: "contractCallERC20",
+        args: [
+          txnData.txTarget,
+          txnData.txData,
+          txnData.approvalData.approvalTokenAddress,
+          txnData.approvalData.allowanceTarget,
+          txnData.approvalData.minimumApprovalAmount,
+          transferId,
+        ],
+      });
+      console.log("txn hash", hash);
       return;
     }
     console.log("native trade");
