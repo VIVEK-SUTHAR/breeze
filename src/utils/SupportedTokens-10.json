@@ -1,0 +1,191 @@
+[
+  {
+    "pythSymbol": "Crypto.MIM/USD",
+    "id": "0x7aa41f6ee464616f3cbc469fddfd7e63d8db319b7bd585cc95b24c29c9172916",
+    "symbol": "MIM",
+    "name": "MAGIC INTERNET MONEY",
+    "address": "0xb153fb3d196a8eb25522705560ac152eeec57901"
+  },
+  {
+    "pythSymbol": "Crypto.LUSD/USD",
+    "id": "0xc9dc99720306ef43fd301396a6f8522c8be89c6c77e8c27d87966918a943fd20",
+    "symbol": "LUSD",
+    "name": "LUSD Stablecoin",
+    "address": "0xc40f949f8a4e094d1b49a23ea9241d289b7b2819"
+  },
+  {
+    "pythSymbol": "Crypto.ENS/USD",
+    "id": "0xb98ab6023650bd2edc026b983fb7c2f8fa1020286f1ba6ecf3f4322cd83b72a6",
+    "symbol": "ENS",
+    "name": "Ethereum name Service",
+    "address": "0x65559aa14915a70190438ef90104769e5e890a00"
+  },
+  {
+    "pythSymbol": "Crypto.MASK/USD",
+    "id": "0xb97d9aa5c9ea258252456963c3a9547d53e4848cb66ce342a3155520741a28d4",
+    "symbol": "MASK",
+    "name": "Mask Network",
+    "address": "0x3390108e913824b8ead638444cc52b9abdf63798"
+  },
+  {
+    "pythSymbol": "Crypto.UMA/USD",
+    "id": "0x4b78d251770732f6304b1f41e9bebaabc3b256985ef18988f6de8d6562dd254c",
+    "symbol": "UMA",
+    "name": "UMA Voting Token v1",
+    "address": "0xe7798f023fc62146e8aa1b36da45fb70855a77ea"
+  },
+  {
+    "pythSymbol": "Crypto.USDC/USD",
+    "id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "symbol": "USDC",
+    "name": "USD Coin",
+    "address": "0x0b2c639c533813f4aa9d7837caf62653d097ff85"
+  },
+  {
+    "pythSymbol": "Crypto.ZRO/USD",
+    "id": "0x3bd860bea28bf982fa06bcf358118064bb114086cc03993bd76197eaab0b8018",
+    "symbol": "ZRO",
+    "name": "LayerZero",
+    "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+  },
+  {
+    "pythSymbol": "Crypto.FXS/USD",
+    "id": "0x735f591e4fed988cd38df74d8fcedecf2fe8d9111664e0fd500db9aa78b316b1",
+    "symbol": "FXS",
+    "name": "Frax Shares",
+    "address": "0x67ccea5bb16181e7b4109c9c2143c24a1c2205be"
+  },
+  {
+    "pythSymbol": "Crypto.FRAX/USD",
+    "id": "0xc3d5d8d6d17081b3d0bbca6e2fa3a6704bb9a9561d9f9e1dc52db47629f862ad",
+    "symbol": "FRAX",
+    "name": "Frax",
+    "address": "0x2e3d870790dc77a83dd1d18184acc7439a53f475"
+  },
+  {
+    "pythSymbol": "Crypto.AAVE/USD",
+    "id": "0x2b9ab1e972a281585084148ba1389800799bd4be63b957507db1349314e47445",
+    "symbol": "AAVE",
+    "name": "Aave Token",
+    "address": "0x76fb31fb4af56892a25e32cfc43de717950c9278"
+  },
+  {
+    "pythSymbol": "Crypto.LINK/USD",
+    "id": "0x8ac0c70fff57e9aefdf5edf44b51d62c2d433653cbb2cf5cc06bb115af04d221",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "address": "0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6"
+  },
+  {
+    "pythSymbol": "Crypto.CRV/USD",
+    "id": "0xa19d04ac696c7a6616d291c7e5d1377cc8be437c327b75adb5dc1bad745fcae8",
+    "symbol": "CRV",
+    "name": "Curve DAO Token",
+    "address": "0x0994206dfe8de6ec6920ff4d779b0d950605fb53"
+  },
+  {
+    "pythSymbol": "Crypto.LRC/USD",
+    "id": "0x20311405c2fc648cf5733197e95c03512af9cf64f2260aea7e212a8c8b7bdcfa",
+    "symbol": "LRC",
+    "name": "LoopringCoin V2",
+    "address": "0xfeaa9194f9f8c1b65429e31341a103071464907e"
+  },
+  {
+    "pythSymbol": "Crypto.MKR/USD",
+    "id": "0x9375299e31c0deb9c6bc378e6329aab44cb48ec655552a70d4b9050346a30378",
+    "symbol": "MKR",
+    "name": "Maker",
+    "address": "0xab7badef82e9fe11f6f33f87bc9bc2aa27f2fcb5"
+  },
+  {
+    "pythSymbol": "Crypto.PERP/USD",
+    "id": "0x944f2f908c5166e0732ea5b610599116cd8e1c41f47452697c1e84138b7184d6",
+    "symbol": "PERP",
+    "name": "Perpetual",
+    "address": "0x9e1028f5f1d5ede59748ffcee5532509976840e0"
+  },
+  {
+    "pythSymbol": "Crypto.SNX/USD",
+    "id": "0x39d020f60982ed892abbcd4a06a276a9f9b7bfbce003204c110b6e488f502da3",
+    "symbol": "SNX",
+    "name": "Synthetix",
+    "address": "0x8700daec35af8ff88c16bdf0418774cb3d7599b4"
+  },
+  {
+    "pythSymbol": "Crypto.UNI/USD",
+    "id": "0x78d185a741d07edb3412b09008b7c5cfb9bbbd7d568bf00ba737b456ba171501",
+    "symbol": "UNI",
+    "name": "Uniswap",
+    "address": "0x6fd9d7ad17242c41f7131d257212c54a0e816691"
+  },
+  {
+    "pythSymbol": "Crypto.WBTC/USD",
+    "id": "0xc9d8b075a5c69303365ae23633d4e085199bf5c520a3b90fed1322a0342ffc33",
+    "symbol": "WBTC",
+    "name": "Wrapped Bitcoin",
+    "address": "0x68f180fcce6836688e9084f035309e29bf0a2095"
+  },
+  {
+    "pythSymbol": "Crypto.RETH/USD",
+    "id": "0xa0255134973f4fdf2f8f7808354274a3b1ebc6ee438be898d045e8b56ba1fe13",
+    "symbol": "RETH",
+    "name": "Rocket Pool ETH",
+    "address": "0x9bcef72be871e61ed4fbbc7630889bee758eb81d"
+  },
+  {
+    "pythSymbol": "Crypto.WSTETH/USD",
+    "id": "0x6df640f3b8963d8f8358f791f352b8364513f6ab1cca5ed3f1f7b5448980e784",
+    "symbol": "WSTETH",
+    "name": "Wrapped Staked ETH",
+    "address": "0x1f32b1c2345538c0c6f582fcb022739c4a194ebb"
+  },
+  {
+    "pythSymbol": "Crypto.OP/USD",
+    "id": "0x385f64d993f7b77d8182ed5003d97c60aa3361f3cecfe711544d2d59165e9bdf",
+    "symbol": "OP",
+    "name": "Optimism",
+    "address": "0x4200000000000000000000000000000000000042"
+  },
+  {
+    "pythSymbol": "Crypto.CBETH/USD",
+    "id": "0x15ecddd26d49e1a8f1de9376ebebc03916ede873447c1255d2d5891b92ce5717",
+    "symbol": "CBETH",
+    "name": "Coinbase Wrapped Staked ETH",
+    "address": "0xaddb6a0412de1ba0f936dcaeb8aaa24578dcf3b2"
+  },
+  {
+    "pythSymbol": "Crypto.ETH/BTC",
+    "id": "0xc96458d393fe9deb7a7d63a0ac41e2898a67a7750dbd166673279e06c868df0a",
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+  },
+  {
+    "pythSymbol": "Crypto.ETH/USD",
+    "id": "0xff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+  },
+  {
+    "pythSymbol": "Crypto.DAI/USD",
+    "id": "0xb0948a5e5313200c632b51bb5ca32f6de0d36e9950a942d19751e833f70dabfd",
+    "symbol": "DAI",
+    "name": "Dai stable coin",
+    "address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1"
+  },
+  {
+    "pythSymbol": "Crypto.USDT/USD",
+    "id": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "symbol": "USDT",
+    "name": "Tether USD",
+    "address": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58"
+  },
+  {
+    "pythSymbol": "Crypto.WETH/USD",
+    "id": "0x9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6",
+    "symbol": "WETH",
+    "name": "Wrapped Ether",
+    "address": "0x4200000000000000000000000000000000000006"
+  }
+]
