@@ -54,7 +54,7 @@ export const buildIdFromEventData = (
 ): string | undefined => {
   const sourceChain = eventData.data.new.source_chain;
   const address = eventData.data.new.source_token;
-  const key = `${sourceChain}-${address};`;
+  const key = `${sourceChain}-${address}`;
   return key;
 };
 

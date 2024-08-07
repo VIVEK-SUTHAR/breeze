@@ -13,8 +13,13 @@ export function registerLimitOrder(req: Request, res: Response) {
     res.status(200).send("Webhook received");
     return;
   }
+  console.log("this is key", key);
+
   console.log("PythID for token", hashmap?.get(key));
-  const pythId = hashmap?.get("137-0x7ceb23fd6bc0add59e62ac25578270cff1b9f619");
+  const pythId = hashmap?.get(key);
+
+  console.log("this is pythId", pythId);
+
   if (!pythId) {
     res.status(200).send("Webhook received");
     return;
@@ -30,7 +35,7 @@ export function registerLimitOrder(req: Request, res: Response) {
         eventData.data.new.source_token,
         eventData.data.new.dest_token,
         eventData.data.new.amount,
-        eventData.data.new.user,
+        eventData.data.new.user
       );
 
       console.log("txnData", txnData);

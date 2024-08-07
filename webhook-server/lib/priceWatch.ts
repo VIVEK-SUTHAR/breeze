@@ -61,11 +61,19 @@ class TokenPriceWatcher {
       const params = new URLSearchParams();
       tokenIds.forEach((id) => params.append("ids[]", id));
 
+      console.log('params', params);
+      console.log('url', `${this.url}?${params.toString()}`);
+      
+      
+
       const response = await fetch(`${this.url}?${params.toString()}`);
+     
+      
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
+      console.log("response", data);
       const priceData: PriceData[] = data.parsed;
 
       priceData.forEach((data) => this.checkPrice(data));
