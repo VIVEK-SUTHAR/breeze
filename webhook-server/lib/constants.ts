@@ -1,8 +1,13 @@
 export const SocketAPIURL = "https://api.socket.tech/v2";
 export const SOCKET_API_KEY = "72a5b4b0-e727-48be-8aa1-5da9d62fe635";
 export const BREEZEGATEWAYADDRESS =
-  "0x13eEbF44816292618dcB93087167A889745c43d4";
+  "0xFC4732285f09603BEaf8492420376170Abdf4Fff";
 export const abi = [
+  {
+    inputs: [],
+    stateMutability: "nonpayable",
+    type: "constructor",
+  },
   {
     anonymous: false,
     inputs: [
@@ -172,8 +177,41 @@ export const abi = [
     type: "fallback",
   },
   {
+    inputs: [
+      {
+        internalType: "address",
+        name: "tokenAddress",
+        type: "address",
+      },
+    ],
+    name: "withdrawERC20",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "withdrawNative",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
     stateMutability: "payable",
     type: "receive",
+  },
+  {
+    inputs: [],
+    name: "admin",
+    outputs: [
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
   },
   {
     inputs: [
