@@ -1,4 +1,6 @@
 export default function buildCronExpression(cronString: string): string {
+  console.log(cronString, typeof cronString);
+  
   if (!cronString || typeof cronString !== "string") {
     throw new Error("invalid");
   }

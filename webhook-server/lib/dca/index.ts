@@ -14,20 +14,28 @@ export class DCAEngine {
   scheduleJob(jobConfig: Record<string, any>) {
     const {
       jobId,
-      tokenSymbol,
-      contractAddress,
+      recepient,
+      fromChainId,
+      toChainId,
+      fromToken,
+      toToken,
       totalAmount,
       numberOfOrders,
       cronSchedule,
     } = jobConfig;
 
     const amountPerOrder = totalAmount / numberOfOrders;
+    console.log("ammount per order", amountPerOrder);
+
     const cronExpression = buildCronExpression(cronSchedule);
     const logContent = `
       Job Scheduled:
       - Job ID: ${jobId}
-      - Token Symbol: ${tokenSymbol}
-      - Contract Address: ${contractAddress}
+      - From Token: ${fromToken}
+      - To Token: ${toToken}
+      - Recipient ${recepient}
+      - From ChainId ${fromChainId}
+      - To ChainId ${toChainId}
       - Total Amount: ${totalAmount}
       - Number of Orders: ${numberOfOrders}
       - Cron Schedule: ${cronSchedule}
@@ -40,20 +48,25 @@ export class DCAEngine {
     const job = cron.schedule(cronExpression, () => {
       if (ordersExecuted >= numberOfOrders) {
         console.log(
-          `All orders for job ${jobId} have been executed. Stopping job.`,
+          `All orders for job ${jobId} have been executed. Stopping job.`
         );
         this.stopJob(jobId);
         return;
       }
 
       console.log(
-        `Executing DCA trade for job ${jobId} (${ordersExecuted + 1}/${numberOfOrders})`,
+        `Executing DCA trade for job ${jobId} (${
+          ordersExecuted + 1
+        }/${numberOfOrders})`
       );
       const child = fork(path.join(__dirname, "../utils/executeDCAOrder"));
 
       child.send({
-        tokenSymbol,
-        contractAddress,
+        fromChainId,
+        toChainId,
+        fromToken,
+        toToken,
+        recepient,
         amount: amountPerOrder,
       });
 
@@ -65,7 +78,7 @@ export class DCAEngine {
 
     this.jobs.set(jobId, job);
     console.log(
-      `Scheduled DCA job ${jobId} for ${totalAmount} ${tokenSymbol} split into ${numberOfOrders} orders every ${cronSchedule}`,
+      `Scheduled DCA job ${jobId} for ${totalAmount} ${fromToken} split into ${numberOfOrders} orders every ${cronSchedule}`
     );
   }
 

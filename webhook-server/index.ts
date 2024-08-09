@@ -2,7 +2,7 @@ import bodyParser from "body-parser";
 import express, { Request, Response } from "express";
 import { setupWatcher } from "./lib/priceWatch";
 import { addListener } from "process";
-import { WebhookEvent } from "./lib/types/EventData";
+import { DCAData, WebhookEvent } from "./lib/types/EventData";
 import fetchTxnData from "./lib/api/socket.api";
 import executeTrade from "./lib/utils/excuteTrade";
 import {
@@ -27,13 +27,17 @@ app.post("/webhook", (req: Request, res: Response) => {
 });
 
 app.post("/dca-webhook", (req: Request, res: Response) => {
+  const limitOrderData = req.body.data.new as DCAData;
   dcaEngine.scheduleJob({
     jobId: uuidv4(),
-    tokenSymbol: "ETH",
-    contractAddress: "0x...",
-    totalAmount: 200,
-    numberOfOrders: 3,
-    cronSchedule: "1 MIN",
+    recepient: limitOrderData.user,
+    fromChainId: limitOrderData.source_chain,
+    toChainId: limitOrderData.source_chain,
+    fromToken: limitOrderData.source_token,
+    toToken: limitOrderData.dest_token,
+    totalAmount: parseFloat(limitOrderData.amount),
+    numberOfOrders: parseFloat(limitOrderData.number_of_orders),
+    cronSchedule: limitOrderData.interval,
   });
   res.status(200).send("DCA Webhook received");
 });

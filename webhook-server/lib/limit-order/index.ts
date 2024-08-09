@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { WebhookEvent } from "../types/EventData";
+import { LimitOrderData, WebhookEvent } from "../types/EventData";
 import { buildIdFromEventData, getHashMap } from "../utils/chainTokensMap";
 import { setupWatcher } from "../priceWatch";
 import fetchTxnData from "../api/socket.api";
@@ -7,6 +7,7 @@ import executeTrade from "../utils/excuteTrade";
 
 export function registerLimitOrder(req: Request, res: Response) {
   const eventData = req.body as WebhookEvent;
+  const limitOrderData = req.body.data.new as LimitOrderData;
   const hashmap = getHashMap();
   const key = buildIdFromEventData(eventData);
   if (!key) {
@@ -18,14 +19,14 @@ export function registerLimitOrder(req: Request, res: Response) {
   console.log("PythID for token", hashmap?.get(key));
   const pythId = hashmap?.get(key);
 
-  console.log("this is pythId", pythId, eventData.data.new.target_price);
+  console.log("this is pythId", pythId, limitOrderData.target_price);
 
   if (!pythId) {
     res.status(200).send("Webhook received");
     return;
   }
   setupWatcher({
-    priceToWatch: parseFloat(eventData.data.new.target_price),
+    priceToWatch: parseFloat(limitOrderData.target_price),
     tokenToWatch: pythId,
     onPriceReached: async () => {
       console.log("Price reached");
