@@ -43,7 +43,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-gray-800 border border-gray-700 rounded-md p-2 text-white flex items-center"
+        className="border border-gray-300 rounded-md p-2 text-black flex items-center"
       >
         <img
           src={chains.find((chain) => chain.name === selectedChain)?.icon}
@@ -54,7 +54,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
         <DownArrow className="ml-2 inline-block h-5 w-8" />
       </button>
       {isOpen && (
-        <ul className="absolute z-10 mt-1 w-full bg-gray-800 border border-gray-700 rounded-md text-white">
+        <ul className="bg-gray-100 absolute z-10 mt-1 w-full border border-gray-300 rounded-md text-black">
           {chains.map((chain) => (
             <li
               key={chain.chainId}

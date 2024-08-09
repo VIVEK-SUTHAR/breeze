@@ -43,13 +43,13 @@ function Swap() {
   };
 
   return (
-    <div className="max-w-max mx-auto mt-10 p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
-        <h2 className="text-2xl font-bold mb-6">Swap</h2>
+    <div className="max-w-max mx-auto mt-10 p-6 rounded-lg border bg-white text-black shadow-sm">
+      <h2 className="text-2xl font-bold mb-6 text-gray-900">Swap</h2>
       <div className="mb-4">
         <div className="flex justify-between items-center mb-2">
-          <label className="block text-sm font-medium text-white">From</label>
-          <span className="text-sm text-white">
-            Bal: 0 <button className="text-purple-500">MAX</button>
+          <label className="block text-sm font-medium text-gray-900">From</label>
+          <span className="text-sm text-gray-600">
+            Bal: 0 <button className="text-orange-500">MAX</button>
           </span>
         </div>
         <div className="flex items-center space-x-2 mb-2">
@@ -62,13 +62,13 @@ function Swap() {
             type="text"
             value={fromValue}
             onChange={(e) => setFromValue(e.target.value)}
-            className=" bg-gray-800 border border-gray-700 rounded-md p-2 text-white"
+            className="block px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
             placeholder="0.0"
           />
           <select
             value={fromToken}
             onChange={(e) => setFromToken(e.target.value)}
-            className="bg-gray-800 border border-gray-700 rounded-md p-2 text-white"
+            className="border border-gray-300 rounded-md p-2 text-gray-900"
           >
             {tokens.map((token) => (
               <option key={token} value={token}>
@@ -82,16 +82,16 @@ function Swap() {
       <div className="flex justify-center">
         <button
           onClick={handleSwap}
-          className="p-2 rounded-full bg-gray-600 hover:bg-gray-500 transition-colors duration-200"
+          className="p-2 rounded-full bg-orange-500 hover:bg-orange-600 transition-colors duration-200"
         >
-          <Arrow className="h-5 w-5 text-gray-600" />
+          <Arrow className="h-5 w-5 text-white" />
         </button>
       </div>
 
       <div className="mb-4">
         <div className="flex justify-between items-center mb-2">
-          <label className="block text-sm font-medium text-white">To</label>
-          <span className="text-sm text-white">Bal: 0</span>
+          <label className="block text-sm font-medium text-gray-900">To</label>
+          <span className="text-sm text-gray-600">Bal: 0</span>
         </div>
         <div className="flex items-center space-x-2 mb-2">
           <CustomDropdown
@@ -103,13 +103,13 @@ function Swap() {
             type="text"
             value={toValue}
             onChange={(e) => setToValue(e.target.value)}
-            className="flex-grow bg-gray-800 border border-gray-700 rounded-md p-2 text-white"
+            className="block px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
             placeholder="0.0"
           />
           <select
             value={toToken}
             onChange={(e) => setToToken(e.target.value)}
-            className="bg-gray-800 border border-gray-700 rounded-md p-2 text-white"
+            className="border border-gray-300 rounded-md p-2 text-gray-900"
           >
             {tokens.map((token) => (
               <option key={token} value={token}>
@@ -120,7 +120,7 @@ function Swap() {
         </div>
       </div>
 
-      <button className="mt-4 w-full px-4 py-2 bg-gray-900 text-white font-semibold rounded-lg shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+      <button className="mt-4 w-full px-4 py-2 bg-orange-500 text-white font-semibold rounded-full shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-200">
         Swap
       </button>
     </div>

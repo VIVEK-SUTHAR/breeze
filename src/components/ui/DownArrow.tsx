@@ -5,7 +5,7 @@ interface DownArrowProps extends React.SVGProps<SVGSVGElement> {}
 const DownArrow: React.FC<DownArrowProps> = (props) => {
   return (
     <svg
-      fill="#fff"
+      fill="#000"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
       xmlSpace="preserve"
