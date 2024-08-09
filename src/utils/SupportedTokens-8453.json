@@ -1,0 +1,79 @@
+[
+  {
+    "pythSymbol": "Crypto.DEGEN/USD (Coming Soon)",
+    "id": "0x9c93e4a22c56885af427ac4277437e756e7ec403fbc892f975d497383bb33560",
+    "symbol": "DEGEN",
+    "name": "Degen",
+    "address": "0x4ed4e862860bed51a9570b96d89af5e1b0efefed"
+  },
+  {
+    "pythSymbol": "Crypto.RETH/USD",
+    "id": "0xa0255134973f4fdf2f8f7808354274a3b1ebc6ee438be898d045e8b56ba1fe13",
+    "symbol": "RETH",
+    "name": "Rocket Pool ETH",
+    "address": "0xb6fe221fe9eef5aba221c348ba20a1bf5e73624c"
+  },
+  {
+    "pythSymbol": "Crypto.COMP/USD",
+    "id": "0x4a8e42861cabc5ecb50996f92e7cfa2bce3fd0a2423b0c44c9b423fb2bd25478",
+    "symbol": "COMP",
+    "name": "Compound",
+    "address": "0x9e1028f5f1d5ede59748ffcee5532509976840e0"
+  },
+  {
+    "pythSymbol": "Crypto.RPL/USD",
+    "id": "0x24f94ac0fd8638e3fc41aab2e4df933e63f763351b640bf336a6ec70651c4503",
+    "symbol": "RPL",
+    "name": "Rocket Pool Protocol",
+    "address": "0x1f73eaf55d696bffa9b0ea16fa987b93b0f4d302"
+  },
+  {
+    "pythSymbol": "Crypto.RPL/USD",
+    "id": "0x24f94ac0fd8638e3fc41aab2e4df933e63f763351b640bf336a6ec70651c4503",
+    "symbol": "RPL",
+    "name": "Rocket Pool Protocol",
+    "address": "0x111111111117dc0aa78b770fa6a738034120c302"
+  },
+  {
+    "pythSymbol": "Crypto.SNX/USD",
+    "id": "0x39d020f60982ed892abbcd4a06a276a9f9b7bfbce003204c110b6e488f502da3",
+    "symbol": "SNX",
+    "name": "Synthetix Network Token",
+    "address": "0x22e6966b799c4d5b13be962e1d117b56327fda66"
+  },
+  {
+    "pythSymbol": "Crypto.ETH/BTC",
+    "id": "0xc96458d393fe9deb7a7d63a0ac41e2898a67a7750dbd166673279e06c868df0a",
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+  },
+  {
+    "pythSymbol": "Crypto.ETH/USD",
+    "id": "0xff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+  },
+  {
+    "pythSymbol": "Crypto.FRIEND/USD (Coming Soon)",
+    "id": "0x6f1c117484f1ab1c387c23fd72fbd2478c4e1b1842fb0c85a4a56ad99e9de5c4",
+    "symbol": "FRIEND",
+    "name": "FRIEND",
+    "address": "0x0bd4887f7d41b35cd75dff9ffee2856106f86670"
+  },
+  {
+    "pythSymbol": "Crypto.USDC/USD",
+    "id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "symbol": "USDC",
+    "name": "USDC",
+    "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+  },
+  {
+    "pythSymbol": "Crypto.ZRO/USD",
+    "id": "0x3bd860bea28bf982fa06bcf358118064bb114086cc03993bd76197eaab0b8018",
+    "symbol": "ZRO",
+    "name": "LayerZero",
+    "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd"
+  }
+]
