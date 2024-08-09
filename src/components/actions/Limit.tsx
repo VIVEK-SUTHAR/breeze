@@ -34,12 +34,15 @@ function LimitOrder() {
   }, []);
 
   const handleSwap = () => {
+    const tempValue = fromValue;
     const tempChain = fromChain;
     const tempToken = fromToken;
     setFromChain(toChain);
     setToChain(tempChain);
     setFromToken(toToken);
     setToToken(tempToken);
+    setFromValue(toValue);
+    setToValue(tempValue);
   };
 
   return (
@@ -98,7 +101,7 @@ function LimitOrder() {
           />
           <input
             type="text"
-            value={fromValue}
+            value={toValue}
             onChange={(e) => setToValue(e.target.value)}
             className="block px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
             placeholder="0.0"

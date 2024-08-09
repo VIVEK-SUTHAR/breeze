@@ -1,13 +1,34 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import chainData from "../../utils/Chains";
+import CustomDropdown from "../ui/CustomDropdown"; // Import CustomDropdown
+
+interface Chain {
+  chainId: number;
+  name: string;
+  icon: string;
+}
 
 function DCAOrder() {
-  const [buyToken, setBuyToken] = useState("");
-  const [sellToken, setSellToken] = useState("");
-  const [amount, setAmount] = useState("");
-  const [frequency, setFrequency] = useState("daily");
-  const [duration, setDuration] = useState("");
+  const [chains, setChains] = useState<Chain[]>([]);
+  const [buyChain, setBuyChain] = useState<string>("");
+  const [sellChain, setSellChain] = useState<string>("");
+  const [buyToken, setBuyToken] = useState<string>("ETH");
+  const [sellToken, setSellToken] = useState<string>("USDC");
+  const [amount, setAmount] = useState<string>("");
+  const [frequency, setFrequency] = useState<string>("daily");
+  const [duration, setDuration] = useState<string>("");
+
+  const tokens = ["ETH", "USDC", "USDC.E", "MATIC"];
+
+  useEffect(() => {
+    setChains(chainData);
+    if (chainData.length > 0) {
+      setBuyChain(chainData[0].name);
+      setSellChain(chainData[0].name);
+    }
+  }, []);
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 rounded-lg border bg-white text-gray-900 shadow-sm">
@@ -15,14 +36,34 @@ function DCAOrder() {
 
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-900">
+          Chain to buy on
+        </label>
+        <CustomDropdown
+          selectedChain={buyChain}
+          chains={chains}
+          onSelect={setBuyChain}
+        />
+      </div>
+
+      <div className="mb-4">
+        <label className="block text-sm font-medium text-gray-900">
           Token to buy
         </label>
-        <input
-          type="text"
-          value={buyToken}
-          onChange={(e) => setBuyToken(e.target.value)}
-          placeholder="Token"
-          className="mt-3 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+        <CustomDropdown
+          selectedChain={buyToken}
+          chains={tokens.map((token) => ({ name: token, chainId: 0, icon: "" }))} // Mock chain data for tokens
+          onSelect={setBuyToken}
+        />
+      </div>
+
+      <div className="mb-4">
+        <label className="block text-sm font-medium text-gray-900">
+          Chain to sell on
+        </label>
+        <CustomDropdown
+          selectedChain={sellChain}
+          chains={chains}
+          onSelect={setSellChain}
         />
       </div>
 
@@ -30,12 +71,10 @@ function DCAOrder() {
         <label className="block text-sm font-medium text-gray-900">
           Token to sell
         </label>
-        <input
-          type="text"
-          value={sellToken}
-          onChange={(e) => setSellToken(e.target.value)}
-          placeholder="Token"
-          className="mt-3 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+        <CustomDropdown
+          selectedChain={sellToken}
+          chains={tokens.map((token) => ({ name: token, chainId: 0, icon: "" }))} // Mock chain data for tokens
+          onSelect={setSellToken}
         />
       </div>
 
