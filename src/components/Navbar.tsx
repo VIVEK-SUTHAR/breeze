@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="border-b border-gray-100">
         <div className="container px-4 mx-auto">
           <div className="flex items-center justify-between py-6">
-            <a href="#">
+            <a href="/">
               <img
                 src="https://static.shuffle.dev/uploads/files/17/174d276abc07ecc5ec0d5aaaffe6d212d50fa896/logo-png-1723181379780.webp"
                 alt="Logo"
@@ -30,7 +30,7 @@ export default function Navbar() {
               <li>
                 <a className="flex items-center flex-wrap gap-2 group" href="#">
                   <span className="group-hover:text-opacity-70 transition duration-200">
-                    Platform
+                    Features
                   </span>
                   <ChevronDown
                     className="group-hover:text-opacity-70 transition duration-200"
@@ -38,23 +38,11 @@ export default function Navbar() {
                   />
                 </a>
               </li>
+             
               <li className="hover:text-opacity-70 transition duration-200">
-                <a href="#">Features</a>
+                <a href="#">Github</a>
               </li>
-              <li className="hover:text-opacity-70 transition duration-200">
-                <a href="#">Community</a>
-              </li>
-              <li>
-                <a className="flex items-center flex-wrap gap-2 group" href="#">
-                  <span className="group-hover:text-opacity-70 transition duration-200">
-                    Resources
-                  </span>
-                  <ChevronDown
-                    className="group-hover:text-opacity-70 transition duration-200"
-                    size={16}
-                  />
-                </a>
-              </li>
+             
             </ul>
             <ConnectButton
               showBalance={false}

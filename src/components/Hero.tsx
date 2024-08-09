@@ -15,7 +15,9 @@ function Hero() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const toggleMobileNav = () => setMobileNavOpen(!mobileNavOpen);
-
+  const navigateToBridge = () => {
+    router.push("/action/limit");
+  };
   return (
     <>
       <section className="overflow-hidden pb-24">
@@ -98,7 +100,7 @@ function Hero() {
           <div className="flex justify-center mb-24">
             <a
               className="w-full sm:w-auto text-center h-16 inline-flex items-center justify-center py-4 px-6 rounded-full bg-orange-500 border border-orange-600 shadow font-bold font-heading text-white hover:bg-orange-600 focus:ring focus:ring-orange-200 transition duration-200"
-              href="#"
+              onClick={navigateToBridge}
             >
               Start Breezing
             </a>
@@ -150,28 +152,28 @@ const features = [
       "Offers a dollar-cost averaging option to spread transactions over time, reducing market volatility impact and risk.",
   },
 ];
-const Features = () => {
-  return (
-    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-      {features.map((feature, i) => (
-        <CardSpotlight
-          key={i}
-          name={feature.name}
-          description={feature.description}
-        />
-      ))}
-    </div>
-  );
-};
+// const Features = () => {
+//   return (
+//     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+//       {features.map((feature, i) => (
+//         <CardSpotlight
+//           key={i}
+//           name={feature.name}
+//           description={feature.description}
+//         />
+//       ))}
+//     </div>
+//   );
+// };
 
-function BgGradient() {
-  return (
-    <div
-      aria-hidden="true"
-      className="absolute inset-0 -z-10 grid grid-cols-2 -space-x-52 opacity-20"
-    >
-      <div className="h-56 bg-gradient-to-br from-blue-700 to-purple-400 blur-[100px]"></div>
-      <div className="h-32 bg-gradient-to-r from-[#14F195] to-[#9945FF] blur-[100px]"></div>
-    </div>
-  );
-}
+// function BgGradient() {
+//   return (
+//     <div
+//       aria-hidden="true"
+//       className="absolute inset-0 -z-10 grid grid-cols-2 -space-x-52 opacity-20"
+//     >
+//       <div className="h-56 bg-gradient-to-br from-blue-700 to-purple-400 blur-[100px]"></div>
+//       <div className="h-32 bg-gradient-to-r from-[#14F195] to-[#9945FF] blur-[100px]"></div>
+//     </div>
+//   );
+// }
