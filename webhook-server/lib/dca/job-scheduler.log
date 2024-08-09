@@ -1,0 +1,20 @@
+
+      Job Scheduled:
+      - Job ID: 1cf929a1-1cbf-4f98-afb0-fb1c674284bc
+      - Token Symbol: ETH
+      - Contract Address: 0x...
+      - Total Amount: 200
+      - Number of Orders: 3
+      - Cron Schedule: 1 MIN
+      - Timestamp: 2024-08-09T14:16:25.115Z
+    
+
+      Job Scheduled:
+      - Job ID: 7b42ba59-dcd4-429e-a046-4d2209f76505
+      - Token Symbol: ETH
+      - Contract Address: 0x...
+      - Total Amount: 200
+      - Number of Orders: 3
+      - Cron Schedule: 1 MIN
+      - Timestamp: 2024-08-09T14:29:14.704Z
+    

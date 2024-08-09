@@ -10,9 +10,13 @@ type Token = {
   name: string;
   address: string;
 };
-
-const DIRNAME = path.join(__dirname, "../../../pyth-socket-pricefeed-scrapper");
-
+const isProd = process.env.NODE_ENV === "production";
+const DIRNAME = path.join(
+  __dirname,
+  !isProd
+    ? "../../../pyth-socket-pricefeed-scrapper"
+    : "../../../../pyth-socket-pricefeed-scrapper",
+);
 const readJsonFile = (filePath: string): Token[] => {
   const rawData = fs.readFileSync(filePath, "utf8");
   return JSON.parse(rawData) as Token[];
