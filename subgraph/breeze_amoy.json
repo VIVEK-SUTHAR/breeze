@@ -1,4 +1,3 @@
-
 {
   "version": "1",
   "name": "BreezeGateway",
@@ -10,8 +9,8 @@
   "instances": [
     {
       "abi": "breezegateway",
-      "address": "0x13eEbF44816292618dcB93087167A889745c43d4",
-      "startBlock":10345023,
+      "address": "0x87c147853c16831b3b976fcC9b65A02BB017Eb48",
+      "startBlock": 10345023,
       "chain": "polygon-amoy"
     }
   ]
