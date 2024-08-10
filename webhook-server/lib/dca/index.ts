@@ -22,6 +22,7 @@ export class DCAEngine {
       totalAmount,
       numberOfOrders,
       cronSchedule,
+      transferId,
     } = jobConfig;
 
     const amountPerOrder = totalAmount / numberOfOrders;
@@ -67,7 +68,8 @@ export class DCAEngine {
         fromToken,
         toToken,
         recepient,
-        amount: amountPerOrder,
+        amount: amountPerOrder.toString(),
+        transferId,
       });
 
       child.on("message", (result) => {

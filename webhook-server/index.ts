@@ -32,12 +32,13 @@ app.post("/dca-webhook", (req: Request, res: Response) => {
     jobId: uuidv4(),
     recepient: limitOrderData.user,
     fromChainId: limitOrderData.source_chain,
-    toChainId: limitOrderData.source_chain,
+    toChainId: limitOrderData.dest_chain,
     fromToken: limitOrderData.source_token,
     toToken: limitOrderData.dest_token,
     totalAmount: parseFloat(limitOrderData.amount),
     numberOfOrders: parseFloat(limitOrderData.number_of_orders),
     cronSchedule: limitOrderData.interval,
+    transferId: limitOrderData.transfer_id,
   });
   res.status(200).send("DCA Webhook received");
 });
