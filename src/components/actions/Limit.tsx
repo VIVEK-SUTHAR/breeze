@@ -9,6 +9,7 @@ import { TokenData } from "@/types";
 import { useAccount, useWriteContract } from "wagmi";
 import { abi, BREEZEGATEWAYADDRESS } from "@/constants";
 import OrderHistory from "../ui/OrderHistory";
+import { parseUnits } from "viem";
 interface Chain {
   chainId: number;
   name: string;
@@ -35,8 +36,7 @@ function LimitOrder() {
   const [toTokens, setToTokens] = useState<TokenData[]>([]);
   const [fromToken, setFromToken] = useState<TokenData>();
   const [toToken, setToToken] = useState<TokenData>();
-  const [fromValue, setFromValue] = useState<string>("");
-  const [toValue, setToValue] = useState<string>("");
+
   const [amount, setAmount] = useState<string>("");
   const [limitPrice, setLimitPrice] = useState<string>("");
   const [orderHistory, setOrderHistory] = useState<LimitOrder[]>([]);
@@ -92,58 +92,72 @@ function LimitOrder() {
   }, [toTokens]);
 
   const handleSwap = () => {
-    const tempValue = fromValue;
     const tempChain = fromChain;
     const tempToken = fromToken;
     setFromChain(toChain);
     setToChain(tempChain);
     setFromToken(toToken);
     setToToken(tempToken);
-    setFromValue(toValue);
-    setToValue(tempValue);
   };
 
-  const handlePlaceLimitOrder = () => {
-    const newOrder: LimitOrder = {
-      id: Date.now().toString(), // Simple unique ID
-      fromChain,
-      toChain,
-      fromToken,
-      toToken,
-      amount,
-      limitPrice,
-      status: "active",
-      timestamp: Date.now(),
-    };
-    setOrderHistory((prevHistory) => [newOrder, ...prevHistory]);
-    // Reset form fields
-    setAmount("");
-    setLimitPrice("");
-  };
+  // const handlePlaceLimitOrder = () => {
+  //   const newOrder: LimitOrder = {
+  //     id: Date.now().toString(), // Simple unique ID
+  //     fromChain,
+  //     toChain,
+  //     fromToken,
+  //     toToken,
+  //     amount,
+  //     limitPrice,
+  //     status: "active",
+  //     timestamp: Date.now(),
+  //   };
+  //   setOrderHistory((prevHistory) => [newOrder, ...prevHistory]);
+  //   // Reset form fields
+  //   setAmount("");
+  //   setLimitPrice("");
+  // };
 
   const handleCancelOrder = (orderId: string) => {
-    setOrderHistory(prevHistory =>
-      prevHistory.map(order =>
-        order.id === orderId ? { ...order, status: 'cancelled' } : order
+    setOrderHistory((prevHistory) =>
+      prevHistory.map((order) =>
+        order.id === orderId ? { ...order, status: "cancelled" } : order
       )
     );
   };
 
   const placeLimitOrder = () => {
     if (!fromChain || !toChain || !fromToken || !toToken) return;
+    console.log(
+      "got this data",
+      address,
+      fromToken.address,
+      toToken.address,
+      fromChain.chainId,
+      toChain.chainId,
+      parseUnits(amount, fromToken.decimals),
+      limitPrice
+    );
+
     writeContract({
       address: BREEZEGATEWAYADDRESS,
       abi,
       functionName: "initiateLimitOrder",
       args: [
         address,
-        fromToken.address,
+        fromToken.address === "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+          ? "0x0000000000000000000000000000000000000000"
+          : fromToken.address,
         toToken.address,
         fromChain.chainId,
         toChain.chainId,
-        parseFloat(fromValue),
+        parseUnits(amount, fromToken.decimals),
         limitPrice,
       ],
+      value:
+        fromToken.address === "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+          ? parseUnits(amount, fromToken.decimals)
+          : BigInt(0),
     });
   };
 
@@ -269,9 +283,9 @@ function LimitOrder() {
       </div>
 
       <button
-        onClick={handlePlaceLimitOrder}
         className="mt-4 w-full px-4 py-2 bg-orange-500 text-white font-semibold rounded-full shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-200"
-       onClick={placeLimitOrder}>
+        onClick={placeLimitOrder}
+      >
         Place Limit Order
       </button>
       {hash && <div>Transaction Hash: {hash}</div>}
