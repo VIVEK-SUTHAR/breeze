@@ -1,5 +1,6 @@
 import bodyParser from "body-parser";
 import express, { Request, Response } from "express";
+import dotenv from "dotenv";
 import { setupWatcher } from "./lib/priceWatch";
 import { addListener } from "process";
 import { DCAData, WebhookEvent } from "./lib/types/EventData";
@@ -15,6 +16,7 @@ import { DCAEngine } from "./lib/dca";
 
 import { v4 as uuidv4 } from "uuid";
 const PORT = 3000;
+dotenv.config();
 
 const app = express();
 initializeHashMap();
