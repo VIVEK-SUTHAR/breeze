@@ -279,6 +279,7 @@ function LimitOrder() {
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
           hash={hash ?? ""}
+          chainId={chainId || 137}
         />
       }
       <UserLimitOrders />
@@ -298,9 +299,8 @@ const UserLimitOrders = () => {
     functionName: "getUserPendingTransfers",
   });
 
-  const pendingTransfers = data as string[]
-  const handleCancelOrder = async (transferId: string) => {
-  };
+  const pendingTransfers = data as string[];
+  const handleCancelOrder = async (transferId: string) => {};
 
   return (
     <div>
@@ -372,7 +372,7 @@ const SinglePendingOrder = ({ transferId }: { transferId: string }) => {
     args: [transferId],
     functionName: "pendingTransfers",
   });
-  console.log("id", transferId)
+  console.log("id", transferId);
   if (isLoading) return <p>Loading order details...</p>;
   if (error) return <p>Error loading order details: {error.message}</p>;
   const order = parsePendingTransfer(data as any) as PendingTransfer;

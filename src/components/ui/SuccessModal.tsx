@@ -1,19 +1,22 @@
+import { getBlockScoutExplorerLink } from "@/utils/getAddressFromSelectedChain";
 import React from "react";
 
 interface TransactionSuccessModalProps {
   isOpen: boolean;
   onClose: () => void;
   hash: string;
+  chainId: number;
 }
 
 const TransactionSuccessModal: React.FC<TransactionSuccessModalProps> = ({
   isOpen,
   onClose,
   hash,
+  chainId,
 }) => {
   if (!isOpen) return null;
 
-  const blockExplorerUrl = `https://etherscan.io/tx/${hash}`;
+  const blockExplorerUrl = getBlockScoutExplorerLink(hash, chainId);
 
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
