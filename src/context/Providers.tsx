@@ -8,7 +8,7 @@ import {
 } from "@rainbow-me/rainbowkit";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { WagmiProvider } from "wagmi";
-import { mainnet, polygon, optimism, arbitrum, base } from "viem/chains";
+import { mainnet, polygon, optimism, arbitrum, base, mode } from "viem/chains";
 import { useTheme } from "next-themes";
 import { APP_NAME } from "@/constants";
 import { useEffect } from "react";
@@ -16,7 +16,7 @@ import { useEffect } from "react";
 const config = getDefaultConfig({
   appName: APP_NAME,
   projectId: "YOUR_PROJECT_ID",
-  chains: [mainnet, polygon, optimism, arbitrum, base],
+  chains: [polygon, optimism, base, mode],
   ssr: true,
 });
 
