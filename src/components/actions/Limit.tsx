@@ -16,6 +16,7 @@ import getContractAddressFromSelectedChain, {
 } from "@/utils/getAddressFromSelectedChain";
 import { readContract } from "viem/actions";
 import { client } from "../../../webhook-server/lib/utils";
+import TransactionSuccessModal from "../ui/SuccessModal";
 interface Chain {
   chainId: number;
   name: string;
@@ -46,6 +47,7 @@ function LimitOrder() {
   const [amount, setAmount] = useState<string>("");
   const [limitPrice, setLimitPrice] = useState<string>("");
   const [orderHistory, setOrderHistory] = useState<LimitOrder[]>([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const { data: hash, writeContract } = useWriteContract();
   const { address } = useAccount();
@@ -261,7 +263,13 @@ function LimitOrder() {
       >
         Place Limit Order
       </button>
-      {hash && <div>Transaction Hash: {hash}</div>}
+      {hash && (
+        <TransactionSuccessModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          hash={hash ?? ""}
+        />
+      )}
       <UserLimitOrders />
     </div>
   );
