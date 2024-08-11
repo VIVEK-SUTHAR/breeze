@@ -31,7 +31,7 @@ export default function Providers({ children }: ProvidersProps) {
   const rainbowkitTheme = theme === "light" ? lightTheme() : midnightTheme();
   useEffect(() => {
     setTheme("light");
-  }, []);
+  }, [setTheme]);
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>

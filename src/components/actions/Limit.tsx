@@ -6,11 +6,14 @@ import chainData from "../../utils/Chains";
 import CustomDropdown from "../ui/CustomDropdown";
 import fetchTokensForChain from "@/utils/fetchTokens";
 import { TokenData } from "@/types";
-import { useAccount, useWriteContract } from "wagmi";
+import { useAccount, useReadContract, useWriteContract } from "wagmi";
 import { abi } from "@/constants";
 import OrderHistory from "../ui/OrderHistory";
 import { parseUnits } from "viem";
 import { BREEZEGATEWAYADDRESSPOLYGON } from "../../../webhook-server/lib/constants";
+import getContractAddressFromSelectedChain, { getChainNameFomId, shortenId } from "@/utils/getAddressFromSelectedChain";
+import { readContract } from "viem/actions";
+import { client } from "../../../webhook-server/lib/utils";
 interface Chain {
   chainId: number;
   name: string;
@@ -257,10 +260,127 @@ function LimitOrder() {
         Place Limit Order
       </button>
       {hash && <div>Transaction Hash: {hash}</div>}
-
-      <OrderHistory orders={orderHistory} onCancelOrder={handleCancelOrder} />
+      <UserLimitOrders />
     </div>
   );
 }
-
 export default LimitOrder;
+const UserLimitOrders = () => {
+  const { address, chainId } = useAccount();
+  const contractAddress = getContractAddressFromSelectedChain(chainId);
+
+  const { data, error, isLoading } = useReadContract({
+    address: contractAddress,
+    chainId: chainId,
+    abi: abi,
+    args: ["0x3207876b4A76Fd8818d97C0F6429fA50DD3fF727"],
+    functionName: "getUserPendingTransfers"
+  });
+
+  const handleCancelOrder = async (transferId) => {
+  };
+
+  return (
+    <div>
+      {isLoading && <p>Loading...</p>}
+      {error && <p>Error loading orders: {error.message}</p>}
+      {data && data.length > 0 ? (
+        data.map((id) => (
+          <SinglePendingOrder key={id} transferId={id} />
+        ))
+      ) : (
+        <p>No pending orders found.</p>
+      )}
+    </div>
+  );
+};
+const parsePendingTransfer = (data) => {
+  if (!data) return null;
+
+  const [user, amount, sourceToken, destToken, sourceChain, destChain, executed, targetPrice, numberOfOrders, interval, isDCA] = data;
+
+  return {
+    user: user,
+    amount: amount.toString(), // Convert BigNumber to string for easier use
+    sourceToken: sourceToken,
+    destToken: destToken,
+    sourceChain: parseInt(sourceChain, 10),
+    destChain: parseInt(destChain, 10),
+    executed: executed,
+    targetPrice: targetPrice,
+    numberOfOrders: parseInt(numberOfOrders, 10),
+    interval: interval,
+    isDCA: isDCA
+  };
+};
+interface PendingTransfer {
+  user: string;
+  amount: string;
+  sourceToken: string;
+  destToken: string;
+  sourceChain: number;
+  destChain: number;
+  executed: boolean;
+  targetPrice: string;
+  numberOfOrders: number;
+  interval: string;
+  isDCA: boolean;
+}
+
+const SinglePendingOrder = ({ transferId }: { transferId: string }) => {
+  const { chainId } = useAccount();
+  const contractAddress = getContractAddressFromSelectedChain(chainId);
+
+  const { data, error, isLoading } = useReadContract({
+    address: contractAddress,
+    chainId: chainId,
+    abi: abi,
+    args: [transferId],
+    functionName: "pendingTransfers"
+  });
+  console.log("id",transferId)
+  if (isLoading) return <p>Loading order details...</p>;
+  if (error) return <p>Error loading order details: {error.message}</p>;
+  const order = parsePendingTransfer(data) as PendingTransfer;
+  return (
+    <div
+      className="border border-gray-300 p-4 rounded-lg shadow-sm my-2"
+    >
+      <div className="flex justify-between items-center mb-2">
+        <span className="font-medium text-gray-900">
+          {getChainNameFomId(order.sourceChain)} → {getChainNameFomId(order.destChain)}
+        </span>
+        <span
+          className={`px-2 py-1 rounded-full text-sm ${order.executed === true
+            ? "bg-green-100 text-green-800"
+            : "bg-gray-100 text-gray-800"
+            }`}
+        >
+          {order.executed ? "Success ":"Pending "}
+        </span>
+      </div>
+
+        <span className="font-medium text-gray-900">
+        Transfer ID{shortenId(transferId)}
+        </span>
+      {
+/*
+      }
+   <p className="text-sm text-gray-600">
+      //   Selling: {order.amount} {order.sourceToken}
+      // </p>
+      // <p className="text-sm text-gray-600">
+      //   For: {order.destToken} at {order.targetPrice} {order.destToken}/
+      //   {order.sourceToken}
+      // </p>
+      // {order.executed !== false && (
+      //   <button
+      //     className="mt-3 w-full px-4 py-2 bg-orange-500 text-white font-semibold rounded-full shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-200"
+      //   >
+      //     Cancel Order
+      //   </button>
+      // )}
+      */}
+    </div>
+  );
+};

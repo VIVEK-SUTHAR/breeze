@@ -33,13 +33,12 @@ export default function OrderHistory({ orders, onCancelOrder }: OrderHistoryProp
                   {order.fromChain} → {order.toChain}
                 </span>
                 <span
-                  className={`px-2 py-1 rounded-full text-sm ${
-                    order.status === "active"
+                  className={`px-2 py-1 rounded-full text-sm ${order.status === "active"
                       ? "bg-green-100 text-green-800"
                       : order.status === "completed"
-                      ? "bg-blue-100 text-blue-800"
-                      : "bg-gray-100 text-gray-800"
-                  }`}
+                        ? "bg-blue-100 text-blue-800"
+                        : "bg-gray-100 text-gray-800"
+                    }`}
                 >
                   {order.status}
                 </span>
