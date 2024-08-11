@@ -10,8 +10,10 @@ import { useAccount, useReadContract, useWriteContract } from "wagmi";
 import { abi } from "@/constants";
 import OrderHistory from "../ui/OrderHistory";
 import { parseUnits } from "viem";
-import { BREEZEGATEWAYADDRESSPOLYGON } from "../../../webhook-server/lib/constants";
-import getContractAddressFromSelectedChain, { getChainNameFomId, shortenId } from "@/utils/getAddressFromSelectedChain";
+import getContractAddressFromSelectedChain, {
+  getChainNameFomId,
+  shortenId,
+} from "@/utils/getAddressFromSelectedChain";
 import { readContract } from "viem/actions";
 import { client } from "../../../webhook-server/lib/utils";
 interface Chain {
@@ -144,7 +146,7 @@ function LimitOrder() {
     );
 
     writeContract({
-      address: BREEZEGATEWAYADDRESSPOLYGON,
+      address: getContractAddressFromSelectedChain(fromChain.chainId),
       abi,
       functionName: "initiateLimitOrder",
       args: [
@@ -274,18 +276,17 @@ const UserLimitOrders = () => {
     chainId: chainId,
     abi: abi,
     args: ["0x3207876b4A76Fd8818d97C0F6429fA50DD3fF727"],
-    functionName: "getUserPendingTransfers"
+    functionName: "getUserPendingTransfers",
   });
 
-  const handleCancelOrder = async (transferId) => {
-  };
+  const handleCancelOrder = async (transferId: string) => {};
 
   return (
     <div>
       {isLoading && <p>Loading...</p>}
       {error && <p>Error loading orders: {error.message}</p>}
-      {data && data.length > 0 ? (
-        data.map((id) => (
+      {data && (data as string[]).length > 0 ? (
+        (data as string[]).map((id: string) => (
           <SinglePendingOrder key={id} transferId={id} />
         ))
       ) : (
@@ -294,10 +295,22 @@ const UserLimitOrders = () => {
     </div>
   );
 };
-const parsePendingTransfer = (data) => {
+const parsePendingTransfer = (data: any) => {
   if (!data) return null;
 
-  const [user, amount, sourceToken, destToken, sourceChain, destChain, executed, targetPrice, numberOfOrders, interval, isDCA] = data;
+  const [
+    user,
+    amount,
+    sourceToken,
+    destToken,
+    sourceChain,
+    destChain,
+    executed,
+    targetPrice,
+    numberOfOrders,
+    interval,
+    isDCA,
+  ] = data;
 
   return {
     user: user,
@@ -310,7 +323,7 @@ const parsePendingTransfer = (data) => {
     targetPrice: targetPrice,
     numberOfOrders: parseInt(numberOfOrders, 10),
     interval: interval,
-    isDCA: isDCA
+    isDCA: isDCA,
   };
 };
 interface PendingTransfer {
@@ -336,35 +349,34 @@ const SinglePendingOrder = ({ transferId }: { transferId: string }) => {
     chainId: chainId,
     abi: abi,
     args: [transferId],
-    functionName: "pendingTransfers"
+    functionName: "pendingTransfers",
   });
-  console.log("id",transferId)
+  console.log("id", transferId);
   if (isLoading) return <p>Loading order details...</p>;
   if (error) return <p>Error loading order details: {error.message}</p>;
   const order = parsePendingTransfer(data) as PendingTransfer;
   return (
-    <div
-      className="border border-gray-300 p-4 rounded-lg shadow-sm my-2"
-    >
+    <div className="border border-gray-300 p-4 rounded-lg shadow-sm my-2">
       <div className="flex justify-between items-center mb-2">
         <span className="font-medium text-gray-900">
-          {getChainNameFomId(order.sourceChain)} → {getChainNameFomId(order.destChain)}
+          {getChainNameFomId(order.sourceChain)} →{" "}
+          {getChainNameFomId(order.destChain)}
         </span>
         <span
-          className={`px-2 py-1 rounded-full text-sm ${order.executed === true
-            ? "bg-green-100 text-green-800"
-            : "bg-gray-100 text-gray-800"
-            }`}
+          className={`px-2 py-1 rounded-full text-sm ${
+            order.executed === true
+              ? "bg-green-100 text-green-800"
+              : "bg-gray-100 text-gray-800"
+          }`}
         >
-          {order.executed ? "Success ":"Pending "}
+          {order.executed ? "Success " : "Pending "}
         </span>
       </div>
 
-        <span className="font-medium text-gray-900">
+      <span className="font-medium text-gray-900">
         Transfer ID{shortenId(transferId)}
-        </span>
-      {
-/*
+      </span>
+      {/*
       }
    <p className="text-sm text-gray-600">
       //   Selling: {order.amount} {order.sourceToken}

@@ -17,7 +17,7 @@ process.on("message", async (data: Record<string, any>) => {
   //To-Do: Use TxnData to Call Contract from EOA.
 
   if (txnData) {
-    await executeTrade(txnData, data.transferId);
+    await executeTrade(txnData, data.transferId, parseInt(data.fromChainId));
   }
   setTimeout(() => {
     if (process.send) {

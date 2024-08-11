@@ -1,9 +1,5 @@
 import createRequest from ".";
-import {
-  BREEZEGATEWAYADDRESSPOLYGON,
-  SOCKET_API_KEY,
-  SocketAPIURL,
-} from "../constants";
+import { SOCKET_API_KEY, SocketAPIURL } from "../constants";
 import {
   CrossChainRoute,
   SameChainRoute,
@@ -12,6 +8,7 @@ import {
   SwapRoutes,
 } from "../types/Socket";
 import axios, { AxiosResponse } from "axios";
+import getContractAddressFromSelectedChain from "../utils/getContractAddressForChain";
 
 export class SocketApi {
   static async getRoutes(
@@ -29,7 +26,7 @@ export class SocketApi {
         fromTokenAddress,
         toTokenAddress,
         fromAmount,
-        userAddress: BREEZEGATEWAYADDRESSPOLYGON,
+        userAddress: getContractAddressFromSelectedChain(parseInt(fromChainId)),
         singleTxOnly: "true",
         uniqueRoutesPerBridge: "false",
         sort: "output",

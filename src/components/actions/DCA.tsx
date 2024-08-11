@@ -6,8 +6,9 @@ import CustomDropdown from "../ui/CustomDropdown"; // Import CustomDropdown
 import { TokenData } from "@/types";
 import fetchTokensForChain from "@/utils/fetchTokens";
 import { parseUnits } from "viem";
-import { abi, BREEZEGATEWAYADDRESSPOLYGON } from "@/constants";
+import { abi } from "@/constants";
 import { useAccount, useWriteContract } from "wagmi";
+import getContractAddressFromSelectedChain from "@/utils/getAddressFromSelectedChain";
 
 interface Chain {
   chainId: number;
@@ -45,7 +46,7 @@ function DCAOrder() {
     );
 
     writeContract({
-      address: BREEZEGATEWAYADDRESSPOLYGON,
+      address: getContractAddressFromSelectedChain(fromChain.chainId),
       abi,
       functionName: "initiateDCAOrder",
       args: [

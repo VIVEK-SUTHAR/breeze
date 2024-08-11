@@ -44,7 +44,11 @@ export function registerLimitOrder(req: Request, res: Response) {
       //To-Do: Use TxnData to Call Contract from EOA.
 
       if (txnData) {
-        await executeTrade(txnData, eventData.data.new.transfer_id);
+        await executeTrade(
+          txnData,
+          eventData.data.new.transfer_id,
+          parseInt(eventData.data.new.source_chain)
+        );
       }
     },
   });

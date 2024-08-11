@@ -5,11 +5,9 @@ import path from "path";
 dotenv.config({
   path: path.resolve(__dirname, "./.env"),
 });
-import { setupWatcher } from "./lib/priceWatch";
-import { addListener } from "process";
+
 import { DCAData, WebhookEvent } from "./lib/types/EventData";
-import fetchTxnData from "./lib/api/socket.api";
-import executeTrade from "./lib/utils/excuteTrade";
+
 import {
   buildIdFromEventData,
   getHashMap,
