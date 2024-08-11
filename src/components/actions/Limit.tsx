@@ -6,7 +6,12 @@ import chainData from "../../utils/Chains";
 import CustomDropdown from "../ui/CustomDropdown";
 import fetchTokensForChain from "@/utils/fetchTokens";
 import { TokenData } from "@/types";
-import { useAccount, useReadContract, useWriteContract } from "wagmi";
+import {
+  useAccount,
+  useReadContract,
+  useSwitchChain,
+  useWriteContract,
+} from "wagmi";
 import { abi } from "@/constants";
 import OrderHistory from "../ui/OrderHistory";
 import { parseUnits } from "viem";
@@ -46,7 +51,8 @@ function LimitOrder() {
   const [orderHistory, setOrderHistory] = useState<LimitOrder[]>([]);
 
   const { data: hash, writeContract } = useWriteContract();
-  const { address } = useAccount();
+  const { address, chainId } = useAccount();
+  const { switchChain } = useSwitchChain();
 
   useEffect(() => {
     setChains(chainData);
@@ -130,8 +136,12 @@ function LimitOrder() {
     );
   };
 
-  const placeLimitOrder = () => {
+  const placeLimitOrder = async () => {
     if (!fromChain || !toChain || !fromToken || !toToken) return;
+    if (chainId !== fromChain.chainId) {
+      console.log("chain is different");
+      switchChain({ chainId: fromChain.chainId });
+    }
     console.log(
       "got this data",
       address,
