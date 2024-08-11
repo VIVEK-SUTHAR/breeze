@@ -108,7 +108,7 @@ function DCAOrder() {
 
       setFromToken(fromTokens[0]);
     }
-  }, [fromTokens]);
+  }, [fromToken, fromTokens]);
 
   useEffect(() => {
     console.log("got to tokens", toTokens);
@@ -118,7 +118,7 @@ function DCAOrder() {
 
       setToToken(toTokens[0]);
     }
-  }, [toTokens]);
+  }, [toToken, toTokens]);
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 rounded-lg border bg-white text-gray-900 shadow-sm">
@@ -126,7 +126,7 @@ function DCAOrder() {
 
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-900">
-          You're selling
+          You `&apos;` re selling
         </label>
         <div className="flex items-center space-x-2 mt-3">
           {fromChain && (

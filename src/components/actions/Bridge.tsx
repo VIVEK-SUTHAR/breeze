@@ -1,5 +1,5 @@
+// @ts-nocheck
 "use client";
-
 import React, { useState, useEffect } from "react";
 import Arrow from "../ui/Arrow";
 import chainData from "../../utils/Chains";

@@ -4,6 +4,7 @@ import {
   BREEZEGATEWAYADDRESSOPTIMISM,
   BREEZEGATEWAYADDRESSPOLYGON,
 } from "@/constants";
+import { funkiMainnet } from "viem/chains";
 export function shortenId(id: string, startChars = 6, endChars = 4) {
   if (id.length <= startChars + endChars) {
     return id; // Return as-is if it's already short enough
@@ -39,6 +40,24 @@ export function getChainNameFomId(chainId: number | undefined) {
       return "Base";
     case 34443:
       return "Mode";
+    default:
+      throw new Error("Unsupported Network");
+  }
+}
+
+export function getBlockScoutExplorerLink(
+  hash: string,
+  chainId: number | undefined,
+) {
+  switch (chainId) {
+    case 137:
+      return `https://polygon.blockscout.com/tx/${hash}`;
+    case 10:
+      return `https://optimism.blockscout.com/tx/${hash}`;
+    case 8453:
+      return `https://base.blockscout.com/tx/${hash}`;
+    case 34443:
+      return `https://explorer.mode.network/tx/${hash}`;
     default:
       throw new Error("Unsupported Network");
   }
