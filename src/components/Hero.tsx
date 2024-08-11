@@ -108,21 +108,21 @@ function Hero() {
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 p-4">
               <img
-                className="mx-auto h-full rounded-xl rounded-3xl"
+                className="mx-auto h-full rounded-xl"
                 src="https://static.shuffle.dev/uploads/files/17/174d276abc07ecc5ec0d5aaaffe6d212d50fa896/Frame-3.png"
                 alt=""
               />
             </div>
             <div className="w-full lg:w-1/3 p-4">
               <img
-                className="mx-auto h-full rounded-xl rounded-3xl"
+                className="mx-auto h-full rounded-xl"
                 src="https://static.shuffle.dev/uploads/files/17/174d276abc07ecc5ec0d5aaaffe6d212d50fa896/Frame-1.png"
                 alt=""
               />
             </div>
             <div className="w-full lg:w-1/3 p-4">
               <img
-                className="mx-auto h-full rounded-xl rounded-3xl"
+                className="mx-auto h-full rounded-xl"
                 src="https://static.shuffle.dev/uploads/files/17/174d276abc07ecc5ec0d5aaaffe6d212d50fa896/Frame-2.png"
                 alt=""
               />

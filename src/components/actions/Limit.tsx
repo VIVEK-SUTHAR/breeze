@@ -4,11 +4,23 @@ import React, { useState, useEffect } from "react";
 import Arrow from "../ui/Arrow";
 import chainData from "../../utils/Chains";
 import CustomDropdown from "../ui/CustomDropdown";
-
+import OrderHistory from "../ui/OrderHistory";
 interface Chain {
   chainId: number;
   name: string;
   icon: string;
+}
+
+interface LimitOrder {
+  id: string;
+  fromChain: string;
+  toChain: string;
+  fromToken: string;
+  toToken: string;
+  amount: string;
+  limitPrice: string;
+  status: "active" | "completed" | "cancelled";
+  timestamp: number;
 }
 
 function LimitOrder() {
@@ -19,9 +31,9 @@ function LimitOrder() {
   const [toToken, setToToken] = useState<string>("USDC.E");
   const [fromValue, setFromValue] = useState<string>("");
   const [toValue, setToValue] = useState<string>("");
-
   const [amount, setAmount] = useState<string>("");
   const [limitPrice, setLimitPrice] = useState<string>("");
+  const [orderHistory, setOrderHistory] = useState<LimitOrder[]>([]);
 
   const tokens = ["ETH", "USDC", "USDC.E", "MATIC"];
 
@@ -43,6 +55,32 @@ function LimitOrder() {
     setToToken(tempToken);
     setFromValue(toValue);
     setToValue(tempValue);
+  };
+
+  const handlePlaceLimitOrder = () => {
+    const newOrder: LimitOrder = {
+      id: Date.now().toString(), // Simple unique ID
+      fromChain,
+      toChain,
+      fromToken,
+      toToken,
+      amount,
+      limitPrice,
+      status: "active",
+      timestamp: Date.now(),
+    };
+    setOrderHistory((prevHistory) => [newOrder, ...prevHistory]);
+    // Reset form fields
+    setAmount("");
+    setLimitPrice("");
+  };
+
+  const handleCancelOrder = (orderId: string) => {
+    setOrderHistory(prevHistory =>
+      prevHistory.map(order =>
+        order.id === orderId ? { ...order, status: 'cancelled' } : order
+      )
+    );
   };
 
   return (
@@ -146,9 +184,14 @@ function LimitOrder() {
         />
       </div>
 
-      <button className="mt-4 w-full px-4 py-2 bg-orange-500 text-white font-semibold rounded-full shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-200">
+      <button
+        onClick={handlePlaceLimitOrder}
+        className="mt-4 w-full px-4 py-2 bg-orange-500 text-white font-semibold rounded-full shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-200"
+      >
         Place Limit Order
       </button>
+
+      <OrderHistory orders={orderHistory} onCancelOrder={handleCancelOrder} />
     </div>
   );
 }
