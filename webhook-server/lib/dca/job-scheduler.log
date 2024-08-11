@@ -76,3 +76,16 @@
       - Cron Schedule: 1 min
       - Timestamp: 2024-08-11T03:43:31.718Z
     
+
+      Job Scheduled:
+      - Job ID: 552b9324-b3ce-45a1-888a-f2ff7c94fc45
+      - From Token: 0x0000000000000000000000000000000000000000
+      - To Token: 0x4200000000000000000000000000000000000006
+      - Recipient 0x3207876b4a76fd8818d97c0f6429fa50dd3ff727
+      - From ChainId 137
+      - To ChainId 10
+      - Total Amount: 2000000000000000000
+      - Number of Orders: 2
+      - Cron Schedule: 1 min
+      - Timestamp: 2024-08-11T11:22:17.674Z
+    

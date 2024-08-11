@@ -178,24 +178,8 @@ function LimitOrder() {
               onSelect={setFromChain}
             />
           )}
-          {/* <input
-            type="text"
-            value={fromValue}
-            onChange={(e) => setFromValue(e.target.value)}
-            className="block px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
-            placeholder="0.0"
-          /> */}
+
           {fromToken && (
-            // <select
-            //   value={fromToken?.name}
-            //   className="border border-gray-300 rounded-md p-2 text-gray-900"
-            // >
-            //   {fromTokens.map((token) => (
-            //     <option key={token.address} onClick={() => setFromToken(token)}>
-            //       {token.name}
-            //     </option>
-            //   ))}
-            // </select>
             <CustomDropdown
               selectedChain={fromToken}
               items={fromTokens}
@@ -228,24 +212,7 @@ function LimitOrder() {
               onSelect={setToChain}
             />
           )}
-          {/* <input
-            type="text"
-            value={toValue}
-            onChange={(e) => setToValue(e.target.value)}
-            className="block px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
-            placeholder="0.0"
-          /> */}
           {toToken && (
-            // <select
-            //   value={toToken?.name}
-            //   className="border border-gray-300 rounded-md p-2 text-gray-900"
-            // >
-            //   {toTokens.map((token) => (
-            //     <option key={token.address} onClick={() => setToToken(token)}>
-            //       {token.name}
-            //     </option>
-            //   ))}
-            // </select>
             <CustomDropdown
               selectedChain={toToken}
               items={toTokens}
