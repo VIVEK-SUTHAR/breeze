@@ -14,8 +14,6 @@ import getContractAddressFromSelectedChain, {
   getChainNameFomId,
   shortenId,
 } from "@/utils/getAddressFromSelectedChain";
-import { readContract } from "viem/actions";
-import { client } from "../../../webhook-server/lib/utils";
 interface Chain {
   chainId: number;
   name: string;
