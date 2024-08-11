@@ -50,7 +50,7 @@ function LimitOrder() {
   const [amount, setAmount] = useState<string>("");
   const [limitPrice, setLimitPrice] = useState<string>("");
   const [orderHistory, setOrderHistory] = useState<LimitOrder[]>([]);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
 
   const { data: hash, writeContract } = useWriteContract();
   const { address, chainId } = useAccount();
@@ -103,6 +103,7 @@ function LimitOrder() {
     }
   }, [toTokens]);
 
+  useEffect(() => {}, [hash]);
   const handleSwap = () => {
     const tempChain = fromChain;
     const tempToken = fromToken;
@@ -271,13 +272,13 @@ function LimitOrder() {
       >
         Place Limit Order
       </button>
-      {hash && (
+      {
         <TransactionSuccessModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
           hash={hash ?? ""}
         />
-      )}
+      }
       <UserLimitOrders />
     </div>
   );
@@ -291,7 +292,7 @@ const UserLimitOrders = () => {
     address: contractAddress,
     chainId: chainId,
     abi: abi,
-    args: ["0x3207876b4A76Fd8818d97C0F6429fA50DD3fF727"],
+    args: [address],
     functionName: "getUserPendingTransfers",
   });
 

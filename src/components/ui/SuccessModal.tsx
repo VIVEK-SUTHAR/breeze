@@ -22,7 +22,7 @@ const TransactionSuccessModal: React.FC<TransactionSuccessModalProps> = ({
         <p className="text-sm text-gray-700 mb-4">
           Your transaction was successful.
         </p>
-        <p className="text-sm text-gray-700 mb-4">
+        <p className="text-sm text-gray-600 mb-4">
           Transaction Hash:{" "}
           <a
             href={blockExplorerUrl}
