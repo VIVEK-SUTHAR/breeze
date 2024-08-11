@@ -7,7 +7,7 @@ import { TokenData } from "@/types";
 import fetchTokensForChain from "@/utils/fetchTokens";
 import { parseUnits } from "viem";
 import { abi } from "@/constants";
-import { useAccount, useWriteContract } from "wagmi";
+import { useAccount, useSwitchChain, useWriteContract } from "wagmi";
 import getContractAddressFromSelectedChain from "@/utils/getAddressFromSelectedChain";
 
 interface Chain {
@@ -28,8 +28,9 @@ function DCAOrder() {
   const [frequency, setFrequency] = useState<string>("min");
   const [duration, setDuration] = useState<string>("");
   const [orderQuantity, setOrderQauntity] = useState<string>("");
-  const { address } = useAccount();
+  const { address, chainId } = useAccount();
   const { data: hash, writeContract } = useWriteContract();
+  const { switchChain } = useSwitchChain();
 
   const placeDCAOrder = () => {
     if (!fromChain || !toChain || !fromToken || !toToken) return;
@@ -44,6 +45,10 @@ function DCAOrder() {
       BigInt(orderQuantity),
       duration + " " + frequency
     );
+    if (chainId !== fromChain.chainId) {
+      console.log("chain is different");
+      switchChain({ chainId: fromChain.chainId });
+    }
 
     writeContract({
       address: getContractAddressFromSelectedChain(fromChain.chainId),

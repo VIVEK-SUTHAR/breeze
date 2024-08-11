@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import DCA from "@/components/actions/DCA";
 import Limit from "@/components/actions/Limit";
-import Swap from "@/components/actions/Swap";
 import Container from "@/components/Container";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import EnsureConnected from "@/components/EnsureConnected";
+import Swap from "@/components/actions/Bridge";
 
 export default function Page({ params }: { params: { action: string } }) {
   const router = useRouter();
-  const [activeTab, setActiveTab] = useState(params.action || "swap");
+  const [activeTab, setActiveTab] = useState(params.action || "limit");
 
   useEffect(() => {
     if (activeTab !== params.action) {
@@ -23,11 +23,11 @@ export default function Page({ params }: { params: { action: string } }) {
       <Container>
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="swap">Swap</TabsTrigger>
+            <TabsTrigger value="bridge">Bridge</TabsTrigger>
             <TabsTrigger value="limit">Limit Order</TabsTrigger>
             <TabsTrigger value="dca">DCA</TabsTrigger>
           </TabsList>
-          <TabsContent value="swap">
+          <TabsContent value="bridge">
             <Swap />
           </TabsContent>
           <TabsContent value="limit">
