@@ -1,6 +1,6 @@
 import createRequest from ".";
 import {
-  BREEZEGATEWAYADDRESS,
+  BREEZEGATEWAYADDRESSPOLYGON,
   SOCKET_API_KEY,
   SocketAPIURL,
 } from "../constants";
@@ -29,7 +29,7 @@ export class SocketApi {
         fromTokenAddress,
         toTokenAddress,
         fromAmount,
-        userAddress: BREEZEGATEWAYADDRESS,
+        userAddress: BREEZEGATEWAYADDRESSPOLYGON,
         singleTxOnly: "true",
         uniqueRoutesPerBridge: "false",
         sort: "output",

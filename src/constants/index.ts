@@ -4,7 +4,7 @@ export const APP_DESCRIPTION =
   "Seamlessly bridge assets across multiple blockchain networks with advanced features for optimized DeFi interactions.";
 export const LANDING_CTA_TEXT = "Start Bridging Now";
 
-export const BREEZEGATEWAYADDRESS =
+export const BREEZEGATEWAYADDRESSPOLYGON =
   "0x118c9E7D758Cd3E527d7bA4B6Fc6f2eAA86b465f";
 
 export const abi = [

@@ -21,7 +21,6 @@ import { DCAEngine } from "./lib/dca";
 import { v4 as uuidv4 } from "uuid";
 const PORT = 3000;
 
-console.log("path", path.resolve(__dirname, "../.env"));
 const app = express();
 initializeHashMap();
 app.use(bodyParser.json());

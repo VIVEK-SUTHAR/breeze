@@ -1,5 +1,5 @@
 import { client } from ".";
-import { abi, BREEZEGATEWAYADDRESS } from "../constants";
+import { abi, BREEZEGATEWAYADDRESSPOLYGON } from "../constants";
 import { SocketTx } from "../types/Socket";
 
 export default async function executeTrade(
@@ -11,7 +11,7 @@ export default async function executeTrade(
       console.log("erc20 trade");
       const hash = await client.writeContract({
         abi,
-        address: BREEZEGATEWAYADDRESS,
+        address: BREEZEGATEWAYADDRESSPOLYGON,
         functionName: "contractCallERC20",
         args: [
           txnData.txTarget,
@@ -28,7 +28,7 @@ export default async function executeTrade(
     console.log("native trade");
     const hash = await client.writeContract({
       abi,
-      address: BREEZEGATEWAYADDRESS,
+      address: BREEZEGATEWAYADDRESSPOLYGON,
       functionName: "contractCallNativeToken",
       args: [txnData.txTarget, txnData.txData, txnData.value, transferId],
     });

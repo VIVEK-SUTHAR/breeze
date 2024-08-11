@@ -7,9 +7,10 @@ import CustomDropdown from "../ui/CustomDropdown";
 import fetchTokensForChain from "@/utils/fetchTokens";
 import { TokenData } from "@/types";
 import { useAccount, useWriteContract } from "wagmi";
-import { abi, BREEZEGATEWAYADDRESS } from "@/constants";
+import { abi } from "@/constants";
 import OrderHistory from "../ui/OrderHistory";
 import { parseUnits } from "viem";
+import { BREEZEGATEWAYADDRESSPOLYGON } from "../../../webhook-server/lib/constants";
 interface Chain {
   chainId: number;
   name: string;
@@ -140,7 +141,7 @@ function LimitOrder() {
     );
 
     writeContract({
-      address: BREEZEGATEWAYADDRESS,
+      address: BREEZEGATEWAYADDRESSPOLYGON,
       abi,
       functionName: "initiateLimitOrder",
       args: [
