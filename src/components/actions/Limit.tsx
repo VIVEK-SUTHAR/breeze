@@ -274,14 +274,14 @@ function LimitOrder() {
       >
         Place Limit Order
       </button>
-      {
+      {hash && (
         <TransactionSuccessModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
           hash={hash ?? ""}
           chainId={chainId || 137}
         />
-      }
+      )}
       <UserLimitOrders />
     </div>
   );
