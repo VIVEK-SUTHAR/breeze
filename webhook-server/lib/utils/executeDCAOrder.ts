@@ -9,21 +9,13 @@ process.on("message", async (data: Record<string, any>) => {
     data.fromToken,
     data.toToken,
     data.amount,
-    data.recepient
+    data.recepient,
   );
-
   console.log("txnData", txnData);
-
-  //To-Do: Use TxnData to Call Contract from EOA.
-
   if (txnData) {
     await executeTrade(txnData, data.transferId, parseInt(data.fromChainId));
-  }
-  setTimeout(() => {
     if (process.send) {
       process.send("EXE_SUCCESS");
     }
-
-    process.exit(0);
-  }, 1000);
+  }
 });
