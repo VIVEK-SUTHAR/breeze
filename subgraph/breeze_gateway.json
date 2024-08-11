@@ -9,7 +9,7 @@
   "instances": [
     {
       "abi": "breezegateway",
-      "address": "0xFC4732285f09603BEaf8492420376170Abdf4Fff",
+      "address": "0x118c9E7D758Cd3E527d7bA4B6Fc6f2eAA86b465f",
       "startBlock":60214408,
       "chain": "matic"
     }

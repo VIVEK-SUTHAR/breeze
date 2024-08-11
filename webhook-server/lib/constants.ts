@@ -1,7 +1,7 @@
 export const SocketAPIURL = "https://api.socket.tech/v2";
 export const SOCKET_API_KEY = "72a5b4b0-e727-48be-8aa1-5da9d62fe635";
 export const BREEZEGATEWAYADDRESS =
-  "0xFC4732285f09603BEaf8492420376170Abdf4Fff";
+  "0x118c9E7D758Cd3E527d7bA4B6Fc6f2eAA86b465f";
 export const abi = [
   {
     inputs: [],
